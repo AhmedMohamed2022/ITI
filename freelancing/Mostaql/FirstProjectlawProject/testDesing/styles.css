@@ -232,10 +232,15 @@ body {
   flex-direction: row;
   gap: 20px;
 }
+
 .feature-content .feature-description {
+  flex: 3;
+}
+.feature-content .feature-image {
+  flex: 2;
 }
 .features .feature-card h3 {
-  color: var(--primary-color);
+  color: #2a3f3f;
   margin-bottom: 10px;
   font-size: 1.4rem;
 }
@@ -251,7 +256,6 @@ body {
 }
 
 .feature-image img {
-  max-width: 100%;
   height: auto;
   width: 115px;
 }
