@@ -1,0 +1,12 @@
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\lab2\helloCS\bin\Debug\net6.0\helloCS.deps.json
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\lab2\helloCS\bin\Debug\net6.0\helloCS.dll
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\lab2\helloCS\bin\Debug\net6.0\helloCS.pdb
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\lab2\helloCS\obj\Debug\net6.0\helloCS.csproj.AssemblyReference.cache
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\lab2\helloCS\obj\Debug\net6.0\helloCS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\lab2\helloCS\obj\Debug\net6.0\helloCS.AssemblyInfoInputs.cache
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\lab2\helloCS\obj\Debug\net6.0\helloCS.AssemblyInfo.cs
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\lab2\helloCS\obj\Debug\net6.0\helloCS.csproj.CoreCompileInputs.cache
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\lab2\helloCS\obj\Debug\net6.0\helloCS.dll
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\lab2\helloCS\obj\Debug\net6.0\refint\helloCS.dll
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\lab2\helloCS\obj\Debug\net6.0\helloCS.pdb
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\lab2\helloCS\obj\Debug\net6.0\ref\helloCS.dll

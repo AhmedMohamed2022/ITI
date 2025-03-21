@@ -1,0 +1,12 @@
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\helloVB\bin\Debug\net6.0\helloVB.deps.json
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\helloVB\bin\Debug\net6.0\helloVB.dll
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\helloVB\bin\Debug\net6.0\helloVB.pdb
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\helloVB\obj\Debug\net6.0\helloVB.vbproj.AssemblyReference.cache
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\helloVB\obj\Debug\net6.0\helloVB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\helloVB\obj\Debug\net6.0\helloVB.AssemblyInfoInputs.cache
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\helloVB\obj\Debug\net6.0\helloVB.AssemblyInfo.vb
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\helloVB\obj\Debug\net6.0\helloVB.vbproj.CoreCompileInputs.cache
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\helloVB\obj\Debug\net6.0\helloVB.dll
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\helloVB\obj\Debug\net6.0\refint\helloVB.dll
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\helloVB\obj\Debug\net6.0\helloVB.pdb
+C:\Users\Ahmed\Desktop\c#fundamentals\lab\helloVB\obj\Debug\net6.0\ref\helloVB.dll

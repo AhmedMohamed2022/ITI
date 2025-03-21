@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "mainCS/1.0.0": {
+        "dependencies": {
+          "helloCS": "1.0.0",
+          "helloVB": "1.0.0"
+        },
+        "runtime": {
+          "mainCS.dll": {}
+        }
+      },
+      "helloCS/1.0.0": {
+        "runtime": {
+          "helloCS.dll": {}
+        }
+      },
+      "helloVB/1.0.0": {
+        "runtime": {
+          "helloVB.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "mainCS/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "helloCS/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "helloVB/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
