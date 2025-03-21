@@ -1,0 +1,19 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_AdminLayout";
+}
+@model List<StudentDetailsViewModel>
+<h1>Students List</h1>
+<div class="card" style="width: 18rem;">
+    @* <img class="card-img-top" src="..." alt="Card image cap"> *@
+    @foreach(var std in Model)
+    {    
+    <div class="card-body">
+        <h5 class="card-title">@std.Name</h5>
+        <p class="card-text">@std.Email</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+    }
+</div>

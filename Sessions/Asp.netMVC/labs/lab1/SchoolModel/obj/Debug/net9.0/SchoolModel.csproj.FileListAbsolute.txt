@@ -1,0 +1,15 @@
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1\SchoolModel\bin\Debug\net9.0\SchoolModel.deps.json
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1\SchoolModel\bin\Debug\net9.0\SchoolModel.runtimeconfig.json
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1\SchoolModel\bin\Debug\net9.0\SchoolModel.dll
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1\SchoolModel\bin\Debug\net9.0\SchoolModel.pdb
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1\SchoolModel\obj\Debug\net9.0\SchoolModel.csproj.AssemblyReference.cache
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1\SchoolModel\obj\Debug\net9.0\SchoolModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1\SchoolModel\obj\Debug\net9.0\SchoolModel.AssemblyInfoInputs.cache
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1\SchoolModel\obj\Debug\net9.0\SchoolModel.AssemblyInfo.cs
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1\SchoolModel\obj\Debug\net9.0\SchoolModel.csproj.CoreCompileInputs.cache
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1\SchoolModel\obj\Debug\net9.0\SchoolModel.sourcelink.json
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1\SchoolModel\obj\Debug\net9.0\SchoolModel.dll
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1\SchoolModel\obj\Debug\net9.0\refint\SchoolModel.dll
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1\SchoolModel\obj\Debug\net9.0\SchoolModel.pdb
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1\SchoolModel\obj\Debug\net9.0\SchoolModel.genruntimeconfig.cache
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1\SchoolModel\obj\Debug\net9.0\ref\SchoolModel.dll

@@ -1,0 +1,16 @@
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1V2\StudentViewModel\bin\Debug\net9.0\StudentViewModel.deps.json
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1V2\StudentViewModel\bin\Debug\net9.0\StudentViewModel.dll
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1V2\StudentViewModel\bin\Debug\net9.0\StudentViewModel.pdb
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1V2\StudentViewModel\bin\Debug\net9.0\SchoolModel.dll
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1V2\StudentViewModel\bin\Debug\net9.0\SchoolModel.pdb
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1V2\StudentViewModel\obj\Debug\net9.0\StudentViewModel.csproj.AssemblyReference.cache
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1V2\StudentViewModel\obj\Debug\net9.0\StudentViewModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1V2\StudentViewModel\obj\Debug\net9.0\StudentViewModel.AssemblyInfoInputs.cache
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1V2\StudentViewModel\obj\Debug\net9.0\StudentViewModel.AssemblyInfo.cs
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1V2\StudentViewModel\obj\Debug\net9.0\StudentViewModel.csproj.CoreCompileInputs.cache
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1V2\StudentViewModel\obj\Debug\net9.0\StudentViewModel.sourcelink.json
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1V2\StudentViewModel\obj\Debug\net9.0\StudentV.CBE8BD4E.Up2Date
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1V2\StudentViewModel\obj\Debug\net9.0\StudentViewModel.dll
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1V2\StudentViewModel\obj\Debug\net9.0\refint\StudentViewModel.dll
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1V2\StudentViewModel\obj\Debug\net9.0\StudentViewModel.pdb
+C:\Users\Ahmed\Desktop\ITI\ITI\Sessions\Asp.netMVC\labs\lab1V2\StudentViewModel\obj\Debug\net9.0\ref\StudentViewModel.dll

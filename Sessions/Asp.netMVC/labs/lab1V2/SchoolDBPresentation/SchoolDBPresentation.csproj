@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\lab1\SchoolModel\SchoolModel.csproj" />
+    <ProjectReference Include="..\Shool.Managers\Shool.Managers.csproj" />
+    <ProjectReference Include="..\StudentViewModel\StudentViewModel.csproj" />
+  </ItemGroup>
+
+</Project>

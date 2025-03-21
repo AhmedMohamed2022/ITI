@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{909F0215-E2F5-C118-1D95-79B3434EBA17}|SchoolDBPresentation.csproj|c:\\users\\ahmed\\desktop\\iti\\iti\\sessions\\asp.netmvc\\labs\\lab1v2\\schooldbpresentation\\views\\student\\addstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{909F0215-E2F5-C118-1D95-79B3434EBA17}|SchoolDBPresentation.csproj|solutionrelative:views\\student\\addstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddStudent.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Views\\Student\\AddStudent.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\AddStudent.cshtml",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Views\\Student\\AddStudent.cshtml",
+              "RelativeToolTip": "Views\\Student\\AddStudent.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T11:50:51.116Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

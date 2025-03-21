@@ -1,0 +1,306 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1\\School\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{749A019F-F924-4FC7-92EF-1BE3D8CD9561}|..\\..\\lab1V2\\SchoolDBPresentation\\SchoolDBPresentation.csproj|c:\\users\\ahmed\\desktop\\iti\\iti\\sessions\\asp.netmvc\\labs\\lab1v2\\schooldbpresentation\\views\\course\\course.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749A019F-F924-4FC7-92EF-1BE3D8CD9561}|..\\..\\lab1V2\\SchoolDBPresentation\\SchoolDBPresentation.csproj|c:\\users\\ahmed\\desktop\\iti\\iti\\sessions\\asp.netmvc\\labs\\lab1v2\\schooldbpresentation\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749A019F-F924-4FC7-92EF-1BE3D8CD9561}|..\\..\\lab1V2\\SchoolDBPresentation\\SchoolDBPresentation.csproj|c:\\users\\ahmed\\desktop\\iti\\iti\\sessions\\asp.netmvc\\labs\\lab1v2\\schooldbpresentation\\views\\course\\addcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749A019F-F924-4FC7-92EF-1BE3D8CD9561}|..\\..\\lab1V2\\SchoolDBPresentation\\SchoolDBPresentation.csproj|c:\\users\\ahmed\\desktop\\iti\\iti\\sessions\\asp.netmvc\\labs\\lab1v2\\schooldbpresentation\\views\\course\\viewcourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749A019F-F924-4FC7-92EF-1BE3D8CD9561}|..\\..\\lab1V2\\SchoolDBPresentation\\SchoolDBPresentation.csproj|c:\\users\\ahmed\\desktop\\iti\\iti\\sessions\\asp.netmvc\\labs\\lab1v2\\schooldbpresentation\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749A019F-F924-4FC7-92EF-1BE3D8CD9561}|..\\..\\lab1V2\\SchoolDBPresentation\\SchoolDBPresentation.csproj|c:\\users\\ahmed\\desktop\\iti\\iti\\sessions\\asp.netmvc\\labs\\lab1v2\\schooldbpresentation\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749A019F-F924-4FC7-92EF-1BE3D8CD9561}|..\\..\\lab1V2\\SchoolDBPresentation\\SchoolDBPresentation.csproj|c:\\users\\ahmed\\desktop\\iti\\iti\\sessions\\asp.netmvc\\labs\\lab1v2\\schooldbpresentation\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749A019F-F924-4FC7-92EF-1BE3D8CD9561}|..\\..\\lab1V2\\SchoolDBPresentation\\SchoolDBPresentation.csproj|c:\\users\\ahmed\\desktop\\iti\\iti\\sessions\\asp.netmvc\\labs\\lab1v2\\schooldbpresentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749A019F-F924-4FC7-92EF-1BE3D8CD9561}|..\\..\\lab1V2\\SchoolDBPresentation\\SchoolDBPresentation.csproj|c:\\users\\ahmed\\desktop\\iti\\iti\\sessions\\asp.netmvc\\labs\\lab1v2\\schooldbpresentation\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749A019F-F924-4FC7-92EF-1BE3D8CD9561}|..\\..\\lab1V2\\SchoolDBPresentation\\SchoolDBPresentation.csproj|c:\\users\\ahmed\\desktop\\iti\\iti\\sessions\\asp.netmvc\\labs\\lab1v2\\schooldbpresentation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749A019F-F924-4FC7-92EF-1BE3D8CD9561}|..\\..\\lab1V2\\SchoolDBPresentation\\SchoolDBPresentation.csproj|c:\\users\\ahmed\\desktop\\iti\\iti\\sessions\\asp.netmvc\\labs\\lab1v2\\schooldbpresentation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749A019F-F924-4FC7-92EF-1BE3D8CD9561}|..\\..\\lab1V2\\SchoolDBPresentation\\SchoolDBPresentation.csproj|c:\\users\\ahmed\\desktop\\iti\\iti\\sessions\\asp.netmvc\\labs\\lab1v2\\schooldbpresentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749A019F-F924-4FC7-92EF-1BE3D8CD9561}|..\\..\\lab1V2\\SchoolDBPresentation\\SchoolDBPresentation.csproj|c:\\users\\ahmed\\desktop\\iti\\iti\\sessions\\asp.netmvc\\labs\\lab1v2\\schooldbpresentation\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749A019F-F924-4FC7-92EF-1BE3D8CD9561}|..\\..\\lab1V2\\SchoolDBPresentation\\SchoolDBPresentation.csproj|c:\\users\\ahmed\\desktop\\iti\\iti\\sessions\\asp.netmvc\\labs\\lab1v2\\schooldbpresentation\\schooldbpresentation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C9C55FF-FBF8-4869-B54D-74087931DED0}|..\\SchoolModel\\SchoolModel.csproj|c:\\users\\ahmed\\desktop\\iti\\iti\\sessions\\asp.netmvc\\labs\\lab1\\schoolmodel\\schoolmodel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C9C55FF-FBF8-4869-B54D-74087931DED0}|..\\SchoolModel\\SchoolModel.csproj|c:\\users\\ahmed\\desktop\\iti\\iti\\sessions\\asp.netmvc\\labs\\lab1\\schoolmodel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C9C55FF-FBF8-4869-B54D-74087931DED0}|..\\SchoolModel\\SchoolModel.csproj|c:\\users\\ahmed\\desktop\\iti\\iti\\sessions\\asp.netmvc\\labs\\lab1\\schoolmodel\\schoolcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C9C55FF-FBF8-4869-B54D-74087931DED0}|..\\SchoolModel\\SchoolModel.csproj|c:\\users\\ahmed\\desktop\\iti\\iti\\sessions\\asp.netmvc\\labs\\lab1\\schoolmodel\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\lab1V2\\SchoolDBPresentation\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "..\\..\\lab1V2\\SchoolDBPresentation\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T11:51:37.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\lab1V2\\SchoolDBPresentation\\Program.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Program.cs",
+              "RelativeToolTip": "..\\..\\lab1V2\\SchoolDBPresentation\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T11:34:47.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "..\\..\\lab1V2\\SchoolDBPresentation\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "..\\..\\lab1V2\\SchoolDBPresentation\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T11:34:39.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Course.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Views\\Course\\Course.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\lab1V2\\SchoolDBPresentation\\Views\\Course\\Course.cshtml",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Views\\Course\\Course.cshtml",
+              "RelativeToolTip": "..\\..\\lab1V2\\SchoolDBPresentation\\Views\\Course\\Course.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T11:28:54.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\lab1V2\\SchoolDBPresentation\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "..\\..\\lab1V2\\SchoolDBPresentation\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T12:30:03.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ViewCourses.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Views\\Course\\ViewCourses.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\lab1V2\\SchoolDBPresentation\\Views\\Course\\ViewCourses.cshtml",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Views\\Course\\ViewCourses.cshtml",
+              "RelativeToolTip": "..\\..\\lab1V2\\SchoolDBPresentation\\Views\\Course\\ViewCourses.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T13:03:15.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "..\\..\\lab1V2\\SchoolDBPresentation\\Controllers\\CourseController.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "..\\..\\lab1V2\\SchoolDBPresentation\\Controllers\\CourseController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T11:26:22.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\lab1V2\\SchoolDBPresentation\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "..\\..\\lab1V2\\SchoolDBPresentation\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T12:11:31.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddCourse.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Views\\Course\\AddCourse.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\lab1V2\\SchoolDBPresentation\\Views\\Course\\AddCourse.cshtml",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Views\\Course\\AddCourse.cshtml",
+              "RelativeToolTip": "..\\..\\lab1V2\\SchoolDBPresentation\\Views\\Course\\AddCourse.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T15:36:20.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\lab1V2\\SchoolDBPresentation\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "..\\..\\lab1V2\\SchoolDBPresentation\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAmwCEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T11:52:38.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\lab1V2\\SchoolDBPresentation\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "..\\..\\lab1V2\\SchoolDBPresentation\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T12:05:57.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\lab1V2\\SchoolDBPresentation\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "..\\..\\lab1V2\\SchoolDBPresentation\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-18T11:11:32.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "..\\..\\lab1V2\\SchoolDBPresentation\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "..\\..\\lab1V2\\SchoolDBPresentation\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T11:09:00.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SchoolDBPresentation",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\SchoolDBPresentation.csproj",
+              "RelativeDocumentMoniker": "..\\..\\lab1V2\\SchoolDBPresentation\\SchoolDBPresentation.csproj",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1V2\\SchoolDBPresentation\\SchoolDBPresentation.csproj",
+              "RelativeToolTip": "..\\..\\lab1V2\\SchoolDBPresentation\\SchoolDBPresentation.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-18T11:08:51.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SchoolModel",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1\\SchoolModel\\SchoolModel.csproj",
+              "RelativeDocumentMoniker": "..\\SchoolModel\\SchoolModel.csproj",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1\\SchoolModel\\SchoolModel.csproj",
+              "RelativeToolTip": "..\\SchoolModel\\SchoolModel.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-18T11:00:50.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1\\SchoolModel\\Program.cs",
+              "RelativeDocumentMoniker": "..\\SchoolModel\\Program.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1\\SchoolModel\\Program.cs",
+              "RelativeToolTip": "..\\SchoolModel\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T01:11:41.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1\\SchoolModel\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "..\\SchoolModel\\Models\\Course.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1\\SchoolModel\\Models\\Course.cs",
+              "RelativeToolTip": "..\\SchoolModel\\Models\\Course.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwBAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T01:05:53.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SchoolContext.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1\\SchoolModel\\SchoolContext.cs",
+              "RelativeDocumentMoniker": "..\\SchoolModel\\SchoolContext.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1\\SchoolModel\\SchoolContext.cs",
+              "RelativeToolTip": "..\\SchoolModel\\SchoolContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wCAAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T01:04:55.647Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

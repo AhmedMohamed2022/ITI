@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1\\SchoolModel\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{43F9497C-7E3D-8EB7-FBB1-E97334E80091}|SchoolModel.csproj|c:\\users\\ahmed\\desktop\\iti\\iti\\sessions\\asp.netmvc\\labs\\lab1\\schoolmodel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F9497C-7E3D-8EB7-FBB1-E97334E80091}|SchoolModel.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F9497C-7E3D-8EB7-FBB1-E97334E80091}|SchoolModel.csproj|c:\\users\\ahmed\\desktop\\iti\\iti\\sessions\\asp.netmvc\\labs\\lab1\\schoolmodel\\schoolcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F9497C-7E3D-8EB7-FBB1-E97334E80091}|SchoolModel.csproj|solutionrelative:schoolcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1\\SchoolModel\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1\\SchoolModel\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T01:31:59.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SchoolContext.cs",
+              "DocumentMoniker": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1\\SchoolModel\\SchoolContext.cs",
+              "RelativeDocumentMoniker": "SchoolContext.cs",
+              "ToolTip": "C:\\Users\\Ahmed\\Desktop\\ITI\\ITI\\Sessions\\Asp.netMVC\\labs\\lab1\\SchoolModel\\SchoolContext.cs",
+              "RelativeToolTip": "SchoolContext.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T01:24:54.662Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
