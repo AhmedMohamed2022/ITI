@@ -1,0 +1,61 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+	Layout = null;
+}
+@model List<AddRoleViewModel>
+<html>
+<head>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+	<div class="container">
+
+		<h2>Role Management</h2>
+		<div>
+			@if (ViewBag.Valid == 1)
+			{
+
+				<div class="alert alert-success" role="alert">
+					Role Added Successfully!
+				</div>
+			}
+			else if (ViewBag.Valid == 2)
+			{
+				<div class="alert alert-danger" role="alert">
+					Error While Adding Role!
+				</div>
+			}
+		</div>
+
+		<form asp-controller="Role" asp-action="Add" method="post">
+			<div class="mb-3">
+				<label class="form-label">Role Name</label>
+				<input type="text" class="form-control" name="roleName" placeholder="Role Name">
+			</div>
+			<input type="submit" name="sendRoles" value="Add Roles" />
+		</form>
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Role Name</th>
+					<th scope="col">Options</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var role in Model)
+				{
+					<tr>
+
+						<th scope="row">@role.Id</th>
+						<td>@role.Name</td>
+						@* <td><a asp-for">Delete Role</a></td> *@
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
