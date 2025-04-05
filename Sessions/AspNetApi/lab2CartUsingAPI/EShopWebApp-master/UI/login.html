@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: auto;
+            margin-top: 100px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            padding-left: 40px;
+        }
+
+        .input-group-text {
+            background: white;
+            border-right: none;
+        }
+
+        .btn-login {
+            width: 100%;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.9rem;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2 class="login-title">Login</h2>
+        <form id="login-form">
+            <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                <input type="text" id="Method" class="form-control" placeholder="Username or Email" required>
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                <input type="password" id="Password" class="form-control" placeholder="Password" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-login">Login</button>
+            <p class="error-message" id="error-message"></p>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            document.getElementById("error-message").innerText = ""; // Clear error message
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "http://localhost:5092/api/Account/Login", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        var response = JSON.parse(xhr.responseText);
+                        localStorage.setItem("token", response.token);
+                        alert("Login successful! Redirecting to cart.");
+                        window.location.href = "cart.html";
+                    } else {
+                        document.getElementById("error-message").innerText = "Login failed: " + xhr.responseText;
+                    }
+                }
+            };
+
+            var data = JSON.stringify({
+                Method: document.getElementById("Method").value,
+                Password: document.getElementById("Password").value
+            });
+            xhr.send(data);
+        });
+    </script>
+</body>
+
+</html>

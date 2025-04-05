@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\wwwroot\\js\\client.js",
+      "PackagePath": "staticwebassets\\js\\client.js"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.ITIStore.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.ITIStore.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.ITIStore.API.props",
+      "PackagePath": "build\\ITIStore.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.ITIStore.API.props",
+      "PackagePath": "buildMultiTargeting\\ITIStore.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.ITIStore.API.props",
+      "PackagePath": "buildTransitive\\ITIStore.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

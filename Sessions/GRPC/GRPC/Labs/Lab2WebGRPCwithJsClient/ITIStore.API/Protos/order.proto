@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "ITIStore.API";
+
+service Order {
+    rpc PlaceOrder (PlaceOrderRequest) returns (PlaceOrderResponse);
+}
+
+message PlaceOrderRequest {
+    int32 clientId = 1;
+    repeated OrderItem products = 2;
+}
+
+message OrderItem {
+    int32 productId = 1;
+    int32 quantity = 2;
+}
+
+message PlaceOrderResponse {
+    string message = 1;
+    int32 orderId = 2;
+}

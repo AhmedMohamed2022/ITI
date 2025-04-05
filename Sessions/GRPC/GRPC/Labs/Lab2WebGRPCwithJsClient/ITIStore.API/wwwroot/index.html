@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>ITI Store</title>
+    <script src="https://cdn.jsdelivr.net/npm/google-protobuf@3.21.2/dist/protobuf.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/grpc-web@1.4.2/dist/grpc-web.js"></script>
+    <script src="js/order_pb.js"></script>
+    <script src="js/order_grpc_web_pb.js"></script>
+    <script src="js/client.js"></script>
+</head>
+<body>
+    <h1>ITI Store Order</h1>
+
+    <div>
+        <h2>Place Order</h2>
+        Client ID: <input type="number" id="clientId" value="1"><br>
+        Product ID: <input type="number" id="productId" value="1000"><br>
+        Quantity: <input type="number" id="quantity" value="1"><br>
+        <button onclick="placeOrder()">Place Order</button>
+        <div id="result"></div>
+    </div>
+</body>
+</html>

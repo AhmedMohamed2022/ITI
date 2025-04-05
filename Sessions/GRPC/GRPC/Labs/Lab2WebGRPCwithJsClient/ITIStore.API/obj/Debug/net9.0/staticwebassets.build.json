@@ -1,0 +1,702 @@
+{
+  "Version": 1,
+  "Hash": "vJQ46YK2O+kkh+ny+gL2E/QugCE0tTR/ohKf5eZcakQ=",
+  "Source": "ITIStore.API",
+  "BasePath": "_content/ITIStore.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ITIStore.API\\wwwroot",
+      "Source": "ITIStore.API",
+      "ContentRoot": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\wwwroot\\",
+      "BasePath": "_content/ITIStore.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\obj\\Debug\\net9.0\\compressed\\3dk9460ag8-hqi29euh2w.gz",
+      "SourceId": "ITIStore.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/ITIStore.API",
+      "RelativePath": "index#[.{fingerprint=hqi29euh2w}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\wwwroot\\index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "w3mz9m8i1f",
+      "Integrity": "rBtwek0YQgBBmC7lp6ijC5wMYzDJs4FZicxaq6OAHdQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\obj\\Debug\\net9.0\\compressed\\lp0pw127ec-l5jg9517dc.gz",
+      "SourceId": "ITIStore.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/ITIStore.API",
+      "RelativePath": "js/client#[.{fingerprint=l5jg9517dc}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\wwwroot\\js\\client.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "4w0gz41jo1",
+      "Integrity": "hMtQediH67pVX47Y3L+jO3YpnvgoHHLckbbQ96sfHAg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\wwwroot\\js\\client.js"
+    },
+    {
+      "Identity": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\wwwroot\\index.html",
+      "SourceId": "ITIStore.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\wwwroot\\",
+      "BasePath": "_content/ITIStore.API",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hqi29euh2w",
+      "Integrity": "WYwFcca+ZsIbmZXF1x3WRpSpTfjnUiKFtf5R49xWvk8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\wwwroot\\js\\client.js",
+      "SourceId": "ITIStore.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\wwwroot\\",
+      "BasePath": "_content/ITIStore.API",
+      "RelativePath": "js/client#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l5jg9517dc",
+      "Integrity": "+XGHnDTNgWBBhB7E9gABoGfpVj6v2qx50QbXsfQB+gg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\client.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.hqi29euh2w.html",
+      "AssetFile": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\obj\\Debug\\net9.0\\compressed\\3dk9460ag8-hqi29euh2w.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002801120448"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "356"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rBtwek0YQgBBmC7lp6ijC5wMYzDJs4FZicxaq6OAHdQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 13:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"WYwFcca+ZsIbmZXF1x3WRpSpTfjnUiKFtf5R49xWvk8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hqi29euh2w"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WYwFcca+ZsIbmZXF1x3WRpSpTfjnUiKFtf5R49xWvk8="
+        }
+      ]
+    },
+    {
+      "Route": "index.hqi29euh2w.html",
+      "AssetFile": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "819"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WYwFcca+ZsIbmZXF1x3WRpSpTfjnUiKFtf5R49xWvk8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 13:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hqi29euh2w"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WYwFcca+ZsIbmZXF1x3WRpSpTfjnUiKFtf5R49xWvk8="
+        }
+      ]
+    },
+    {
+      "Route": "index.hqi29euh2w.html.gz",
+      "AssetFile": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\obj\\Debug\\net9.0\\compressed\\3dk9460ag8-hqi29euh2w.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "356"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rBtwek0YQgBBmC7lp6ijC5wMYzDJs4FZicxaq6OAHdQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 13:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hqi29euh2w"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rBtwek0YQgBBmC7lp6ijC5wMYzDJs4FZicxaq6OAHdQ="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\obj\\Debug\\net9.0\\compressed\\3dk9460ag8-hqi29euh2w.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002801120448"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "356"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rBtwek0YQgBBmC7lp6ijC5wMYzDJs4FZicxaq6OAHdQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 13:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"WYwFcca+ZsIbmZXF1x3WRpSpTfjnUiKFtf5R49xWvk8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WYwFcca+ZsIbmZXF1x3WRpSpTfjnUiKFtf5R49xWvk8="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "819"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WYwFcca+ZsIbmZXF1x3WRpSpTfjnUiKFtf5R49xWvk8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 13:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WYwFcca+ZsIbmZXF1x3WRpSpTfjnUiKFtf5R49xWvk8="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\obj\\Debug\\net9.0\\compressed\\3dk9460ag8-hqi29euh2w.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "356"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rBtwek0YQgBBmC7lp6ijC5wMYzDJs4FZicxaq6OAHdQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 13:19:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rBtwek0YQgBBmC7lp6ijC5wMYzDJs4FZicxaq6OAHdQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/client.js",
+      "AssetFile": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\obj\\Debug\\net9.0\\compressed\\lp0pw127ec-l5jg9517dc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002531645570"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "394"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hMtQediH67pVX47Y3L+jO3YpnvgoHHLckbbQ96sfHAg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 13:21:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"+XGHnDTNgWBBhB7E9gABoGfpVj6v2qx50QbXsfQB+gg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XGHnDTNgWBBhB7E9gABoGfpVj6v2qx50QbXsfQB+gg="
+        }
+      ]
+    },
+    {
+      "Route": "js/client.js",
+      "AssetFile": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\wwwroot\\js\\client.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XGHnDTNgWBBhB7E9gABoGfpVj6v2qx50QbXsfQB+gg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 13:21:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XGHnDTNgWBBhB7E9gABoGfpVj6v2qx50QbXsfQB+gg="
+        }
+      ]
+    },
+    {
+      "Route": "js/client.js.gz",
+      "AssetFile": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\obj\\Debug\\net9.0\\compressed\\lp0pw127ec-l5jg9517dc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "394"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hMtQediH67pVX47Y3L+jO3YpnvgoHHLckbbQ96sfHAg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 13:21:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hMtQediH67pVX47Y3L+jO3YpnvgoHHLckbbQ96sfHAg="
+        }
+      ]
+    },
+    {
+      "Route": "js/client.l5jg9517dc.js",
+      "AssetFile": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\obj\\Debug\\net9.0\\compressed\\lp0pw127ec-l5jg9517dc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002531645570"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "394"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hMtQediH67pVX47Y3L+jO3YpnvgoHHLckbbQ96sfHAg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 13:21:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"+XGHnDTNgWBBhB7E9gABoGfpVj6v2qx50QbXsfQB+gg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l5jg9517dc"
+        },
+        {
+          "Name": "label",
+          "Value": "js/client.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XGHnDTNgWBBhB7E9gABoGfpVj6v2qx50QbXsfQB+gg="
+        }
+      ]
+    },
+    {
+      "Route": "js/client.l5jg9517dc.js",
+      "AssetFile": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\wwwroot\\js\\client.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XGHnDTNgWBBhB7E9gABoGfpVj6v2qx50QbXsfQB+gg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 13:21:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l5jg9517dc"
+        },
+        {
+          "Name": "label",
+          "Value": "js/client.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XGHnDTNgWBBhB7E9gABoGfpVj6v2qx50QbXsfQB+gg="
+        }
+      ]
+    },
+    {
+      "Route": "js/client.l5jg9517dc.js.gz",
+      "AssetFile": "C:\\ITI\\Sessions\\GRPC\\Labs\\Lab2WebGRPCwithJsClient\\ITIStore.API\\obj\\Debug\\net9.0\\compressed\\lp0pw127ec-l5jg9517dc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "394"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hMtQediH67pVX47Y3L+jO3YpnvgoHHLckbbQ96sfHAg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 13:21:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l5jg9517dc"
+        },
+        {
+          "Name": "label",
+          "Value": "js/client.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hMtQediH67pVX47Y3L+jO3YpnvgoHHLckbbQ96sfHAg="
+        }
+      ]
+    }
+  ]
+}

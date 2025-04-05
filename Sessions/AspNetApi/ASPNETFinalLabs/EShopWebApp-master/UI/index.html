@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-4.0.0/dist/css/bootstrap.css">
+    <title>Cart Items</title>
+</head>
+
+<body>
+    <div id="cart-container" class="container mt-5">
+        <h2>Your Cart Items</h2>
+        <div class="row" id="cart-items"></div>
+    </div>
+
+    <script src="./bootstrap-4.0.0/dist/js/bootstrap.js"></script>
+    <script>
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var response = JSON.parse(this.responseText);
+                console.log(response); // Debugging output
+
+                var cartContainer = document.getElementById("cart-items");
+                cartContainer.innerHTML = ""; // Clear previous items
+
+                response.list.forEach(item => {
+                    var CartItem = document.createElement("div");
+                    CartItem.classList.add("col-md-4");
+                    CartItem.innerHTML = `
+                        <div class="card mb-3" style="width: 18rem;">
+                            <img class="card-img-top" src="https://via.placeholder.com/150" alt="Product image">
+                            <div class="card-body">
+                                <h5 class="card-title">${item.productName}</h5>
+                                <p class="card-text">Price: ${item.price} USD</p>
+                                <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>`;
+                    cartContainer.appendChild(CartItem);
+                });
+            }
+        };
+
+        xhr.open("POST", "http://localhost:5000/api/CartItem/ProductList", true);
+        xhr.setRequestHeader("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWhtZWRtb2hhbWVkMjQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhaG1lZG1vaGFtZWQyNGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiZWZiNjczNjYtMWIxOS00MTdiLWExNTMtZGNlMDg1OTc2NTU0IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQ2xpZW50IiwiZXhwIjoxNzQzMDgyMDc1fQ.rGVZOuElMTtpoYGKEgJWmvf0HEx5dsQeNS4igOONT70");
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.send();
+    </script>
+</body>
+
+</html>

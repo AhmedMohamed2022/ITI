@@ -1,0 +1,80 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Form</title>
+    <script src="https://unpkg.com/google-protobuf/google-protobuf.js"></script>
+    <script src="https://unpkg.com/@improbable-eng/grpc-web"></script>
+    <script src="order_pb.js"></script> generated from your proto
+    <script src="order_grpc_web_pb.js"></script> generated from your proto
+</head>
+<body>
+
+    <h1>Create Order</h1>
+
+    <form id="orderForm">
+        <input type="text" id="productId" placeholder="Product ID" required>
+        <input type="number" id="quantity" placeholder="Quantity" required>
+        <button type="submit">Submit Order</button>
+    </form>
+
+    <script>
+        const { OrderRequest } = require('./order_pb.js');
+        const { OrderServiceClient } = require('./order_grpc_web_pb.js');
+
+        const client = new OrderServiceClient('http://localhost:5000', null, null);
+
+        document.getElementById('orderForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const productId = document.getElementById('productId').value;
+            const quantity = document.getElementById('quantity').value;
+
+            const request = new OrderRequest();
+            request.setProductid(productId);
+            request.setQuantity(Number(quantity));
+
+            client.createOrder(request, {}, (err, response) => {
+                if (err) {
+                    console.error('Error:', err.message);
+                } else {
+                    console.log('Order Created:', response.toObject());
+                    alert('Order created successfully!');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ITI Store (Standalone)</title>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Place Order</h1>
+    <div>
+        <label>Client ID: <input type="number" id="clientId" value="1"></label><br>
+        <label>Product ID: <input type="number" id="productId" value="1000"></label><br>
+        <label>Quantity: <input type="number" id="quantity" value="1"></label><br>
+        <button id="orderBtn">Place Order</button>
+    </div>
+    <div id="result"></div>
+
+    <!-- gRPC-Web Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/google-protobuf@3.21.2/dist/protobuf.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/grpc-web@1.4.2/dist/grpc-web.js"></script>
+
+    <!-- Generated Protobuf Files -->
+    <script src="js/order_pb.js"></script>
+    <script src="js/order_grpc_web_pb.js"></script>
+
+    <!-- Your Code -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "ITIStore.API.Controllers.OrderController",
+    "Method": "PlaceOrder",
+    "RelativePath": "api/orders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "order",
+        "Type": "ITIStore.API.Controllers.Order",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ITIStore.API.Controllers.OrderController",
+    "Method": "Index",
+    "RelativePath": "api/orders",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

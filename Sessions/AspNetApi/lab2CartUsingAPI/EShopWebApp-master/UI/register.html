@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | E-Commerce</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .register-container {
+            max-width: 450px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-control {
+            padding-left: 40px;
+        }
+
+        .input-group-text {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .btn-primary {
+            width: 100%;
+            font-size: 1.2rem;
+            padding: 10px;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .text-center a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .text-center a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="register-container">
+            <h2 class="text-center">Create an Account</h2>
+            <form id="register-form">
+                <div class="mb-3 input-group">
+                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    <input type="text" id="UserName" class="form-control" placeholder="Username" required>
+                </div>
+
+                <div class="mb-3 input-group">
+                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    <input type="email" id="Email" class="form-control" placeholder="Email" required>
+                </div>
+
+                <div class="mb-3 input-group">
+                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                    <input type="password" id="Password" class="form-control" placeholder="Password" required>
+                </div>
+
+                <div class="mb-3 input-group">
+                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                    <input type="password" id="ConformPassord" class="form-control" placeholder="Confirm Password"
+                        required>
+                </div>
+
+                <div class="mb-3 input-group">
+                    <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                    <input type="text" id="PhoneNumber" class="form-control" placeholder="Phone Number" required>
+                </div>
+
+                <div class="mb-3 input-group">
+                    <span class="input-group-text"><i class="fas fa-user-tag"></i></span>
+                    <input type="text" id="Role" class="form-control" placeholder="Role" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+
+            <p class="text-center mt-3">Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("register-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "http://localhost:5092/api/Account/Register", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        alert("Registration successful! Redirecting to login page.");
+                        window.location.href = "login.html";
+                    } else {
+                        alert("Registration failed: " + xhr.responseText);
+                    }
+                }
+            };
+            var data = JSON.stringify({
+                UserName: document.getElementById("UserName").value,
+                Password: document.getElementById("Password").value,
+                Email: document.getElementById("Email").value,
+                ConformPassord: document.getElementById("ConformPassord").value,
+                PhoneNumber: document.getElementById("PhoneNumber").value,
+                Role: document.getElementById("Role").value
+            });
+            xhr.send(data);
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

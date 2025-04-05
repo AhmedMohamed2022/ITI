@@ -1,0 +1,4 @@
+C:\ITI\Sessions\GRPC\Labs\Lab2WebGRPCwithJsClient\ITIStore.API\wwwroot\index.html
+C:\ITI\Sessions\GRPC\Labs\Lab2WebGRPCwithJsClient\ITIStore.API\wwwroot\js\client.js
+wwwroot\index.html
+wwwroot\js\client.js

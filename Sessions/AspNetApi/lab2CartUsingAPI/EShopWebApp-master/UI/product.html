@@ -1,0 +1,70 @@
+<!-- products.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-4.0.0/dist/css/bootstrap.css">
+    <title>Products</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2>Product List</h2>
+        <div class="row" id="product-list"></div>
+    </div>
+
+    <script src="./bootstrap-4.0.0/dist/js/bootstrap.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var products = JSON.parse(this.responseText);
+                    var productContainer = document.getElementById("product-list");
+                    productContainer.innerHTML = "";
+                    products.forEach(product => {
+                        var productItem = document.createElement("div");
+                        productItem.classList.add("col-md-4");
+                        productItem.innerHTML = `
+                            <div class="card mb-3" style="width: 18rem;">
+                                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Product image">
+                                <div class="card-body">
+                                    <h5 class="card-title">${product.productId}</h5>
+                                    
+                                </div>
+                            </div>`;
+                        productContainer.appendChild(productItem);
+                    });
+                }
+            };
+            xhr.open("GET", "http://localhost:5000/api/Product/List", true);
+            xhr.send();
+        });
+
+        function addToCart(productId) {
+            var token = localStorage.getItem("token");
+            if (!token) {
+                alert("You must be logged in to add items to the cart.");
+                return;
+            }
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "http://localhost:5000/api/CartItem/Add", true);
+            xhr.setRequestHeader("Authorization", `Bearer ${token}`);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                    if (this.status == 200) {
+                        alert("Product added to cart successfully!");
+                    } else {
+                        alert("Failed to add product to cart.");
+                    }
+                }
+            };
+            xhr.send(JSON.stringify({ productId: productId }));
+        }
+    </script>
+</body>
+
+</html>
