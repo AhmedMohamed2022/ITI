@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Create Account</h1>
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Method</label>
+      <input type="text" required class="form-control" [(ngModel)]="user.Method" name="Method">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Password</label>
+      <input type="password" class="form-control" [(ngModel)]="user.Password" name="password">
+    </div>
+
+    <button type="button" class="btn btn-primary" (click)="Send()">Login</button>
+  </form>
+</div>

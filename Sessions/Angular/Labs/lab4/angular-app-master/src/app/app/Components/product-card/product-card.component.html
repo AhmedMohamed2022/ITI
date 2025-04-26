@@ -1,0 +1,11 @@
+<div class="card">
+  <img src="http://localhost:5094/{{Product.images[0]}}" class="card-img-top" [alt]="Product.name">
+  <div class="card-body">
+    <h5 class="card-title">{{Product.name}}</h5>
+    <p class="card-text">{{Product.price |currency:"EGP"}}</p>
+    <p class="card-text">{{Product.description}}</p>
+    <a class="btn btn-success" routerLink="/product/{{Product.id}}">See Details</a>
+    <!-- <a  class="btn btn-success" [routerLink]="['/product',Product.id]">See Details</a> -->
+    <a class="btn btn-primary" (click)="add()">Add to cart</a>
+  </div>
+</div>
