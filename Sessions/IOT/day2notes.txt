@@ -1,0 +1,1 @@
+parkingid,parkingname,slotsnumber,fees,workinghours,Lat,Lng

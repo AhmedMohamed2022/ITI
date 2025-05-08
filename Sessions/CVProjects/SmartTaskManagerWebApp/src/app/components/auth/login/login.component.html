@@ -1,0 +1,37 @@
+<div class="login-container">
+    <div class="login-card">
+        <div class="login-header">
+            <h1>Welcome Back</h1>
+            <p>Log in to continue to your dashboard</p>
+        </div>
+
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email" type="email" placeholder="Your email address">
+                <mat-error *ngIf="loginForm.get('email')?.hasError('required')">Email is required</mat-error>
+                <mat-error *ngIf="loginForm.get('email')?.hasError('email')">Please enter a valid email</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>Password</mat-label>
+                <input matInput formControlName="password" type="password" placeholder="Your password">
+                <mat-error *ngIf="loginForm.get('password')?.hasError('required')">Password is required</mat-error>
+                <mat-error *ngIf="loginForm.get('password')?.hasError('minlength')">Password must be at least 6
+                    characters</mat-error>
+            </mat-form-field>
+
+            <div class="login-actions">
+                <a routerLink="/forgot-password" class="forgot-password">Forgot password?</a>
+                <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid || loading">
+                    <span *ngIf="loading">Logging in...</span>
+                    <span *ngIf="!loading">Log In</span>
+                </button>
+            </div>
+        </form>
+
+        <div class="login-footer">
+            <p>Don't have an account? <a routerLink="/signup">Sign up</a></p>
+        </div>
+    </div>
+</div>

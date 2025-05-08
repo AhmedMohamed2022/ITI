@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneCup - Coffee Marketplace</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #ff6d00;
+            --secondary: #3a3a3a;
+            --dark: #222222;
+            --light: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark);
+            overflow-x: hidden;
+        }
+
+        /* Hero section */
+        .hero {
+            background-color: #FFF9F3;
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+            padding: 120px 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: #666;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #ff8c24;
+            border-color: #ff8c24;
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--dark);
+            color: var(--dark);
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            background: transparent;
+            margin-left: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--dark);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Mouse follower animation */
+        .cursor-follower {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #ff6d00, #ff9e40);
+            filter: blur(80px);
+            opacity: 0.4;
+            pointer-events: none;
+            transition: transform 0.1s ease-out;
+            z-index: 1;
+        }
+
+        /* Features section */
+        .features {
+            padding: 120px 0;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .features h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+        }
+
+        .features-text {
+            margin-bottom: 3rem;
+        }
+
+        /* Mobile tabs animation */
+        .mobile-display {
+            position: relative;
+            height: 600px;
+            perspective: 1000px;
+        }
+
+        .mobile-tab {
+            position: absolute;
+            width: 280px;
+            height: 550px;
+            background-color: #ffffff;
+            border-radius: 30px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: all 0.5s ease;
+            transform-origin: center bottom;
+            left: calc(50% - 140px);
+        }
+
+        .mobile-tab img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 30px;
+        }
+
+        .mobile-tab:nth-child(1) {
+            z-index: 3;
+            transform: translateY(0) translateX(0) scale(1);
+        }
+
+        .mobile-tab:nth-child(2) {
+            z-index: 2;
+            transform: translateY(30px) translateX(-30px) scale(0.95);
+        }
+
+        .mobile-tab:nth-child(3) {
+            z-index: 1;
+            transform: translateY(60px) translateX(-60px) scale(0.9);
+        }
+
+        /* Stats section */
+        .stats {
+            background-color: #FFF9F3;
+            padding: 80px 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        /* Navbar */
+        .navbar {
+            padding: 20px 0;
+            background-color: transparent;
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--dark);
+        }
+
+        .nav-link {
+            color: var(--dark);
+            font-weight: 500;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 991px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .mobile-display {
+                height: 500px;
+                margin-top: 50px;
+            }
+
+            .mobile-tab {
+                width: 220px;
+                height: 450px;
+                left: calc(50% - 110px);
+            }
+        }
+
+        @media (max-width: 767px) {
+            .hero {
+                padding: 100px 0 60px;
+                text-align: center;
+            }
+
+            .hero-img {
+                margin-top: 50px;
+            }
+
+            .mobile-display {
+                height: 400px;
+            }
+
+            .mobile-tab {
+                width: 200px;
+                height: 380px;
+                left: calc(50% - 100px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">OneCup</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item ms-lg-4">
+                        <a class="btn btn-primary" href="#">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Mouse Follower -->
+    <section class="hero d-flex align-items-center">
+        <div class="cursor-follower"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1>Discover the finest coffee with OneCup</h1>
+                    <p>Connect with local roasters and enjoy premium coffee delivered to your door. Perfect for coffee
+                        enthusiasts and casual drinkers alike.</p>
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                        <a href="#" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-img">
+                    <img src="/api/placeholder/600/500" alt="Coffee cup" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section with Mobile Tabs Animation -->
+    <section class="features">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 features-text">
+                    <h2>Experience the OneCup App</h2>
+                    <p class="mb-4">Our mobile app makes ordering your favorite coffee quick and convenient. Browse,
+                        order, and track your coffee with just a few taps.</p>
+                    <div class="d-flex flex-column gap-4">
+                        <div class="d-flex align-items-start">
+                            <div class="feature-icon me-3 mt-1">
+                                <i class="fas fa-map-marker-alt text-primary fs-4"></i>
+                            </div>
+                            <div>
+                                <h5>Locate Nearby Roasters</h5>
+                                <p>Find the best local coffee roasters near you with our interactive map.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div class="feature-icon me-3 mt-1">
+                                <i class="fas fa-coffee text-primary fs-4"></i>
+                            </div>
+                            <div>
+                                <h5>Personalized Recommendations</h5>
+                                <p>Get coffee suggestions based on your taste preferences and past orders.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div class="feature-icon me-3 mt-1">
+                                <i class="fas fa-truck text-primary fs-4"></i>
+                            </div>
+                            <div>
+                                <h5>Fast Delivery</h5>
+                                <p>Enjoy your coffee delivered to your doorstep within hours of roasting.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mobile-display">
+                        <div class="mobile-tab">
+                            <img src="/api/placeholder/280/550" alt="Mobile app screen 1">
+                        </div>
+                        <div class="mobile-tab">
+                            <img src="/api/placeholder/280/550" alt="Mobile app screen 2">
+                        </div>
+                        <div class="mobile-tab">
+                            <img src="/api/placeholder/280/550" alt="Mobile app screen 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Premium Coffee Varieties</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-item">
+                        <h3>200+</h3>
+                        <p>Local Roasters</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-item">
+                        <h3>50K+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Mouse follower animation
+        document.addEventListener('DOMContentLoaded', function () {
+            const hero = document.querySelector('.hero');
+            const follower = document.querySelector('.cursor-follower');
+
+            // Only add mouse follower on desktop
+            if (window.innerWidth > 768) {
+                hero.addEventListener('mousemove', (e) => {
+                    const x = e.clientX;
+                    const y = e.clientY;
+
+                    // Calculate position based on hero section dimensions
+                    follower.style.transform = `translate(${x - 150}px, ${y - 150}px)`;
+                });
+            }
+
+            // Scroll-based animation for mobile tabs
+            const mobileDisplay = document.querySelector('.mobile-display');
+            const mobileTabs = document.querySelectorAll('.mobile-tab');
+
+            window.addEventListener('scroll', () => {
+                const featuresTop = document.querySelector('.features').getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                // Calculate how far the features section is in the viewport (0 to 1)
+                const scrollProgress = Math.max(0, Math.min(1, 1 - (featuresTop / (windowHeight * 0.7))));
+
+                if (scrollProgress > 0) {
+                    // Animate the mobile tabs based on scroll position
+                    mobileTabs[0].style.transform = `translateY(${scrollProgress * -20}px) translateX(${scrollProgress * 20}px) scale(${1 - scrollProgress * 0.05})`;
+                    mobileTabs[1].style.transform = `translateY(${30 + scrollProgress * -10}px) translateX(${-30 + scrollProgress * 60}px) scale(${0.95 - scrollProgress * 0.02})`;
+                    mobileTabs[2].style.transform = `translateY(${60 + scrollProgress * -30}px) translateX(${-60 + scrollProgress * 90}px) scale(${0.9 - scrollProgress * 0.01})`;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

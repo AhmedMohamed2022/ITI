@@ -1,0 +1,37 @@
+<div class="sidebar-container">
+  <div class="sidebar-section">
+    <div class="sidebar-header">
+      <h2>Navigation</h2>
+    </div>
+
+    <div class="sidebar-nav">
+      <a mat-list-item routerLink="/dashboard" routerLinkActive="active">
+        <mat-icon>dashboard</mat-icon>
+        <span>Dashboard</span>
+      </a>
+
+      <a mat-list-item routerLink="/tasks" routerLinkActive="active">
+        <mat-icon>assignment</mat-icon>
+        <span>Tasks</span>
+      </a>
+
+      <a mat-list-item routerLink="/projects" routerLinkActive="active">
+        <mat-icon>folder</mat-icon>
+        <span>Projects</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="sidebar-section" *ngIf="projects.length > 0">
+    <div class="sidebar-header">
+      <h2>Projects</h2>
+    </div>
+
+    <div class="sidebar-projects">
+      <a mat-list-item *ngFor="let project of projects" [routerLink]="['/projects', project._id, 'tasks']"
+        routerLinkActive="active" [ngStyle]="{'border-left': '4px solid ' + (project.color || '#3f51b5')}">
+        <span>{{project.name}}</span>
+      </a>
+    </div>
+  </div>
+</div>

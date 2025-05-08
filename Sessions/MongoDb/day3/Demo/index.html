@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+
+    async function main() {
+        const response = await fetch("http://localhost:3000/user/add-user", {
+            method: "POST",
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: "nour ahmed",
+                age: 22,
+                email: "nour@gmail.com",
+                role: "Admin"
+
+            })
+            // ...
+        });
+
+        const data = await response.json();
+        localStorage.setItem('token', data.token)
+    }
+
+    main();
+
+</script>
+
+</html>

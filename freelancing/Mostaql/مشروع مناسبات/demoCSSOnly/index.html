@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة كوارزم | تنظيم وحجز الفعاليات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap');
+
+        :root {
+            --primary: #8e44ad;
+            --primary-light: #a55ebd;
+            --secondary: #f5b7ff;
+            --accent: #d4af37;
+            --light: #f9f4f9;
+            --dark: #333333;
+            --rating: #ffaa00;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo i {
+            margin-left: 8px;
+            color: var(--accent);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-light);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .hero {
+            background-color: #fff;
+            padding: 50px 0;
+            margin-bottom: 40px;
+            background-image: linear-gradient(135deg, rgba(142, 68, 173, 0.1), rgba(212, 175, 55, 0.1));
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: var(--dark);
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .search-section {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            margin-bottom: 40px;
+        }
+
+        .search-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .search-top {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .search-input {
+            flex: 1;
+            position: relative;
+        }
+
+        .search-input input {
+            width: 100%;
+            padding: 15px 20px;
+            padding-right: 50px;
+            border: 2px solid #ddd;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            transition: border-color 0.3s;
+        }
+
+        .search-input input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .search-input i {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+
+        .search-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .filter-item {
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .filter-item select {
+            width: 100%;
+            padding: 10px 15px;
+            border: 2px solid #ddd;
+            border-radius: 50px;
+            background-color: white;
+            appearance: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: border-color 0.3s;
+        }
+
+        .filter-item select:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .filter-item i {
+            margin-left: 5px;
+            color: var(--primary);
+        }
+
+        .categories {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .section-title h2 {
+            color: var(--primary);
+            font-size: 1.8rem;
+        }
+
+        .see-all {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
+
+        .see-all i {
+            margin-right: 5px;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .category-card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+            text-align: center;
+            text-decoration: none;
+            color: var(--dark);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-icon {
+            background-color: var(--secondary);
+            color: var(--primary);
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .category-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .vendors {
+            margin-bottom: 40px;
+        }
+
+        .vendors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .vendor-card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+
+        .vendor-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .vendor-image {
+            height: 180px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .vendor-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .vendor-card:hover .vendor-image img {
+            transform: scale(1.05);
+        }
+
+        .vendor-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: var(--accent);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .vendor-content {
+            padding: 20px;
+        }
+
+        .vendor-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .vendor-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .vendor-price {
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .vendor-location {
+            display: flex;
+            align-items: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .vendor-location i {
+            margin-left: 5px;
+            color: var(--primary);
+        }
+
+        .vendor-rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .stars {
+            color: var(--rating);
+            margin-left: 5px;
+        }
+
+        .vendor-rating span {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .featured-vendors {
+            margin-bottom: 40px;
+            background-color: #fff;
+            padding: 40px 0;
+            background-image: linear-gradient(135deg, rgba(245, 183, 255, 0.2), rgba(212, 175, 55, 0.1));
+        }
+
+        .featured-badge {
+            background-color: var(--primary);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .testimonials {
+            margin-bottom: 40px;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: var(--shadow);
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-left: 15px;
+        }
+
+        .testimonial-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .testimonial-info h4 {
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .testimonial-info .stars {
+            font-size: 0.9rem;
+        }
+
+        .testimonial-content p {
+            font-style: italic;
+            color: #555;
+        }
+
+        .cta {
+            background-color: var(--primary);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .cta h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn-white {
+            background-color: white;
+            color: var(--primary);
+            border: none;
+        }
+
+        .btn-white:hover {
+            background-color: var(--accent);
+            color: white;
+        }
+
+        footer {
+            background-color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-column h3 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column a {
+            text-decoration: none;
+            color: var(--dark);
+            transition: color 0.3s;
+        }
+
+        .footer-column a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            transition: all 0.3s;
+        }
+
+        .social-link:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+        }
+
+        @media (max-width: 992px) {
+            .hero-content {
+                flex-direction: column;
+            }
+
+            .hero-text {
+                text-align: center;
+            }
+
+            .search-top {
+                flex-direction: column;
+            }
+
+            .search-input {
+                width: 100%;
+            }
+
+            .search-top .btn {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+                width: 100%;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: white;
+                box-shadow: var(--shadow);
+                padding: 20px;
+            }
+
+            .nav-menu.active {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .auth-buttons {
+                margin-top: 20px;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .categories-grid {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            }
+
+            .vendor-meta {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .hero-text h1 {
+                font-size: 2.2rem;
+            }
+
+            .cta h2 {
+                font-size: 1.8rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-gem"></i>
+                منصة كوارزم
+            </a>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="#">التصنيفات</a></li>
+                    <li><a href="#">مقدمي الخدمات</a></li>
+                    <li><a href="#">كيف يعمل</a></li>
+                    <li><a href="#">اتصل بنا</a></li>
+                </ul>
+
+                <div class="auth-buttons">
+                    <a href="#" class="btn btn-outline">تسجيل دخول</a>
+                    <a href="#" class="btn btn-primary">إنشاء حساب</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>احجز فعاليتك بكل سهولة</h1>
+                <p>منصة كوارزم تربط بينك وبين أفضل مقدمي خدمات المناسبات والفعاليات في مكان واحد</p>
+                <a href="#" class="btn btn-primary">استكشف الخدمات</a>
+            </div>
+            <div class="hero-image">
+                <img src="/api/placeholder/600/400" alt="منصة كوارزم لتنظيم الفعاليات">
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="search-section">
+            <div class="search-form">
+                <div class="search-top">
+                    <div class="search-input">
+                        <input type="text" placeholder="ابحث عن خدمات المناسبات...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <button class="btn btn-primary">بحث</button>
+                </div>
+                <div class="search-filters">
+                    <div class="filter-item">
+                        <select>
+                            <option value="">اختر التصنيف</option>
+                            <option value="halls">قاعات</option>
+                            <option value="chairs">كراسي</option>
+                            <option value="decoration">زينة</option>
+                            <option value="catering">ضيافة</option>
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <select>
+                            <option value="">اختر المنطقة</option>
+                            <option value="riyadh">الرياض</option>
+                            <option value="jeddah">جدة</option>
+                            <option value="dammam">الدمام</option>
+                            <option value="makkah">مكة</option>
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <select>
+                            <option value="">نطاق السعر</option>
+                            <option value="low">أقل من 1000 ريال</option>
+                            <option value="medium">1000 - 5000 ريال</option>
+                            <option value="high">أكثر من 5000 ريال</option>
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <input type="date" placeholder="التاريخ"
+                            style="width: 100%; padding: 10px 15px; border: 2px solid #ddd; border-radius: 50px; font-size: 0.95rem;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="section-title">
+                <h2>تصفح حسب التصنيف</h2>
+                <a href="#" class="see-all">عرض الكل <i class="fas fa-arrow-left"></i></a>
+            </div>
+            <div class="categories-grid">
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>قاعات</h3>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-chair"></i>
+                    </div>
+                    <h3>كراسي</h3>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-table"></i>
+                    </div>
+                    <h3>طاولات</h3>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>ضيافة</h3>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>زينة</h3>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>مزارع</h3>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <section class="featured-vendors">
+        <div class="container">
+            <div class="section-title">
+                <h2>مقدمي الخدمات المميزين</h2>
+                <a href="#" class="see-all">عرض الكل <i class="fas fa-arrow-left"></i></a>
+            </div>
+            <div class="vendors-grid">
+                <div class="vendor-card">
+                    <div class="vendor-image">
+                        <img src="/api/placeholder/400/300" alt="قاعة الأميرات">
+                        <div class="vendor-badge">مميز</div>
+                    </div>
+                    <div class="vendor-content">
+                        <h3>قاعة الأميرات</h3>
+                        <div class="vendor-meta">
+                            <div class="vendor-price">5000 ريال</div>
+                            <div class="vendor-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                الرياض
+                            </div>
+                        </div>
+                        <div class="vendor-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span>(32 تقييم)</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="width: 100%;">حجز</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <div class="vendor-image">
+                        <img src="/api/placeholder/400/300" alt="مزرعة الواحة">
+                        <div class="vendor-badge">مميز</div>
+                    </div>
+                    <div class="vendor-content">
+                        <h3>مزرعة الواحة</h3>
+                        <div class="vendor-meta">
+                            <div class="vendor-price">3500 ريال</div>
+                            <div class="vendor-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                جدة
+                            </div>
+                        </div>
+                        <div class="vendor-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span>(18 تقييم)</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="width: 100%;">حجز</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <div class="vendor-image">
+                        <img src="/api/placeholder/400/300" alt="خدمات الضيافة الملكية">
+                        <div class="vendor-badge">مميز</div>
+                    </div>
+                    <div class="vendor-content">
+                        <h3>خدمات الضيافة الملكية</h3>
+                        <div class="vendor-meta">
+                            <div class="vendor-price">2800 ريال</div>
+                            <div class="vendor-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                الدمام
+                            </div>
+                        </div>
+                        <div class="vendor-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(45 تقييم)</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="width: 100%;">حجز</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="vendors">
+            <div class="section-title">
+                <h2>أحدث الخدمات</h2>
+                <a href="#" class="see-all">عرض الكل <i class="fas fa-arrow-left"></i></a>
+            </div>
+            <div class="vendors-grid">
+                <div class="vendor-card">
+                    <div class="vendor-image">
+                        <img src="/api/placeholder/400/300" alt="كراسي فاخرة">
+                    </div>
+                    <div class="vendor-content">
+                        <h3>كراسي فاخرة</h3>
+                        <div class="vendor-meta">
+                            <div class="vendor-price">50 ريال / كرسي</div>
+                            <div class="vendor-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                الرياض
+                            </div>
+                        </div>
+                        <div class="vendor-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span>(12 تقييم)</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="width: 100%;">حجز</a>
+                    </div>
+                </div>
+                <div class="vendor-card">
+                    <div class="vendor-image">
+                        <img src="/api/placeholder/400/300" alt="قاعة الفردوس">
+                        <div class="vendor-content">
+                            <h3>قاعة الفردوس</h3>
+                            <div class="vendor-meta">
+                                <div class="vendor-price">7500 ريال</div>
+                                <div class="vendor-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    مكة
+                                </div>
+                            </div>
+                            <div class="vendor-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>(28 تقييم)</span>
+                            </div>
+                            <a href="#" class="btn btn-primary" style="width: 100%;">حجز</a>
+                        </div>
+                    </div>
+                    <div class="vendor-card">
+                        <div class="vendor-image">
+                            <img src="/api/placeholder/400/300" alt="زينات الحفلات">
+                        </div>
+                        <div class="vendor-content">
+                            <h3>زينات الحفلات</h3>
+                            <div class="vendor-meta">
+                                <div class="vendor-price">1200 ريال / حفلة</div>
+                                <div class="vendor-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    الرياض
+                                </div>
+                            </div>
+                            <div class="vendor-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span>(7 تقييمات)</span>
+                            </div>
+                            <a href="#" class="btn btn-primary" style="width: 100%;">حجز</a>
+                        </div>
+                    </div>
+                    <div class="vendor-card">
+                        <div class="vendor-image">
+                            <img src="/api/placeholder/400/300" alt="طاولات الرياض">
+                        </div>
+                        <div class="vendor-content">
+                            <h3>طاولات الرياض</h3>
+                            <div class="vendor-meta">
+                                <div class="vendor-price">75 ريال / طاولة</div>
+                                <div class="vendor-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    الرياض
+                                </div>
+                            </div>
+                            <div class="vendor-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span>(15 تقييم)</span>
+                            </div>
+                            <a href="#" class="btn btn-primary" style="width: 100%;">حجز</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="section-title">
+                <h2>آراء العملاء</h2>
+                <a href="#" class="see-all">عرض الكل <i class="fas fa-arrow-left"></i></a>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="/api/placeholder/100/100" alt="صورة العميل">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>أحمد محمد</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>تجربة رائعة مع منصة كوارزم! وفرت علي الكثير من الوقت والجهد في تنظيم حفل زفافي. الخدمات كانت
+                            ممتازة والأسعار مناسبة جداً.</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="/api/placeholder/100/100" alt="صورة العميل">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>سارة علي</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>أنصح بشدة بمنصة كوارزم لتنظيم الفعاليات. تعاملت معهم في تنظيم مؤتمر للشركة وكان التنظيم رائع
+                            والخدمات متميزة. شكراً للفريق المحترف!</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="/api/placeholder/100/100" alt="صورة العميل">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>خالد عبدالله</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>سهولة الاستخدام والتنوع في الخيارات من أكثر ما أعجبني في المنصة. تمكنت من مقارنة الأسعار
+                            والخدمات واختيار ما يناسبني بسهولة تامة.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="app-section">
+            <div class="section-title">
+                <h2>حمل تطبيق كوارزم</h2>
+            </div>
+            <div
+                style="display: flex; align-items: center; justify-content: space-around; flex-wrap: wrap; gap: 30px; margin: 30px 0;">
+                <div style="flex: 1; min-width: 300px;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 20px; color: var(--primary);">منصة كوارزم الآن على
+                        هاتفك</h3>
+                    <p style="margin-bottom: 20px;">حمل التطبيق واحصل على خصم 10% على أول حجز من خلال التطبيق</p>
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="#" style="text-decoration: none;">
+                            <img src="/api/placeholder/170/50" alt="تطبيق آبل ستور">
+                        </a>
+                        <a href="#" style="text-decoration: none;">
+                            <img src="/api/placeholder/170/50" alt="تطبيق جوجل بلاي">
+                        </a>
+                    </div>
+                </div>
+                <div style="flex: 1; min-width: 300px; text-align: center;">
+                    <img src="/api/placeholder/300/500" alt="تطبيق كوارزم" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="cta">
+        <div class="container">
+            <h2>هل أنت مقدم خدمات؟</h2>
+            <p>انضم إلى قائمة مقدمي الخدمات في منصة كوارزم وابدأ في استقبال الحجوزات بشكل أسرع وأسهل</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-white">تعرف على المزيد</a>
+                <a href="#" class="btn btn-outline">تسجيل كمقدم خدمة</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>كوارزم</h3>
+                    <ul>
+                        <li><a href="#">من نحن</a></li>
+                        <li><a href="#">كيف يعمل</a></li>
+                        <li><a href="#">الوظائف</a></li>
+                        <li><a href="#">المدونة</a></li>
+                        <li><a href="#">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>مقدمي الخدمات</h3>
+                    <ul>
+                        <li><a href="#">تسجيل كمقدم خدمة</a></li>
+                        <li><a href="#">مميزات مقدمي الخدمات</a></li>
+                        <li><a href="#">شروط مقدمي الخدمات</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>التصنيفات</h3>
+                    <ul>
+                        <li><a href="#">قاعات</a></li>
+                        <li><a href="#">كراسي وطاولات</a></li>
+                        <li><a href="#">زينة وديكور</a></li>
+                        <li><a href="#">ضيافة</a></li>
+                        <li><a href="#">تصوير وفيديو</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>المناطق</h3>
+                    <ul>
+                        <li><a href="#">الرياض</a></li>
+                        <li><a href="#">جدة</a></li>
+                        <li><a href="#">الدمام</a></li>
+                        <li><a href="#">مكة</a></li>
+                        <li><a href="#">المدينة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>النشرة البريدية</h3>
+                    <p style="margin-bottom: 15px;">اشترك للحصول على أحدث العروض والفعاليات</p>
+                    <div style="display: flex; margin-bottom: 15px;">
+                        <input type="email" placeholder="البريد الإلكتروني"
+                            style="flex: 1; padding: 10px; border: 2px solid #ddd; border-radius: 50px 0 0 50px; font-size: 0.9rem;">
+                        <button class="btn btn-primary" style="border-radius: 0 50px 50px 0;">اشتراك</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p>&copy; 2025 كوارزم - جميع الحقوق محفوظة</p>
+                <div style="display: flex; justify-content: center; gap: 15px; margin-top: 15px;">
+                    <a href="#" style="color: var(--dark); text-decoration: none;">سياسة الخصوصية</a>
+                    <span>|</span>
+                    <a href="#" style="color: var(--dark); text-decoration: none;">الشروط والأحكام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // للقائمة المتجاوبة على الهواتف
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function () {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+
+        // إغلاق القائمة عند النقر على الروابط
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-menu').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

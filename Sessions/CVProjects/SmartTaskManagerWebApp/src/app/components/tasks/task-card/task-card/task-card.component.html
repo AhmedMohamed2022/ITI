@@ -1,0 +1,44 @@
+<mat-card class="task-card" [ngClass]="{'completed': task.status === 'completed'}">
+  <mat-card-content>
+    <div class="task-header">
+      <div class="task-checkbox">
+        <mat-checkbox [checked]="task.status === 'completed'" (change)="toggleTaskStatus()"
+          color="primary"></mat-checkbox>
+      </div>
+      <div class="task-title" [ngClass]="{'completed-text': task.status === 'completed'}">
+        {{task.title}}
+      </div>
+      <div class="task-actions">
+        <button mat-icon-button [matMenuTriggerFor]="taskMenu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #taskMenu="matMenu">
+          <button mat-menu-item [routerLink]="['/tasks', task._id, 'edit']">
+            <mat-icon>edit</mat-icon>
+            <span>Edit</span>
+          </button>
+          <button mat-menu-item (click)="deleteTask()">
+            <mat-icon>delete</mat-icon>
+            <span>Delete</span>
+          </button>
+        </mat-menu>
+      </div>
+    </div>
+
+    <div class="task-description" *ngIf="task.description">
+      {{task.description}}
+    </div>
+
+    <div class="task-meta">
+      <div class="task-priority">
+        <mat-icon [ngStyle]="{'color': getPriorityColor()}">flag</mat-icon>
+        <span>{{task.priority | titlecase}}</span>
+      </div>
+
+      <div class="task-date" *ngIf="task.dueDate">
+        <mat-icon>calendar_today</mat-icon>
+        <span>{{task.dueDate | date:'mediumDate'}}</span>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

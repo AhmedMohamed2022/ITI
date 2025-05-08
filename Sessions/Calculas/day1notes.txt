@@ -1,0 +1,62 @@
+1-set theory
+set: collection of distinct elements
+magnitude: number of elements in set
+empty Set: set with zero magnitude {} , Ø 
+operations:-
+reference: https://byjus.com/maths/set-theory-symbols/
+ - element of (a ∈ A)
+ - not element of (a ∉ A) only with ∈ that applies to element with Set
+ - intersection (Y ∩ Z)
+ - Union (A ∪ B)
+ - proper subset/strict subset (A ⊂ B) all elements of A is part of B but has fewer elements that B
+ - subset (A ⊆B) all elements of A is part of B and might has all elements of B (note A subset of B , B is super set of A)
+ - not subset (Z ⊄ Y) all elements of Z aren't part of B
+ - equality (A=B) both identical
+ - complement (Ac ,A') 
+ - relative complement (A-B) elements belong to A not B ==(A-(A ∩ B))
+Venn Diagram:
+Properties of Sets:
+ - Commutative law : A∪B = B∪A , A∩B=B∩A
+ - Associative law: (A∪B)∪C=A∪(B∪C)
+ - Distributive law: (A∪B)∩C=(A∩B)∪(A∪C)
+  DeMorgan's laws:
+	- (A∪B)'=A'∩ B'
+	- (A∩B)'=A'∪ B'
+2-Propability: The measure of the likelihood that an event will occure
+  -It is quantified as a number between 0 and 1 where 0 indicates      impossibility and 1 indicates certainty.
+
+  Sample space(S): set of all possible outcome from experiment.
+  it is discrete if consists of sets
+  it is continues if deals with intervals
+
+  EX: throwing a dice:
+ 	S={1,2,3,4,5,6}
+      Flipping a Coin:
+	S={HH,HT,TH,TT}
+          Draw 2 balls from box
+	with replacement
+	  S={RG,RR,RB,...}
+	without replacement
+	  S={RG,GR,...}
+  Events : subset of the sample space of random experiment.
+  we can use set operations with events .
+   if E1∩E2=Ø (Mutually exclusive).
+   equally likely , random experiment == not biased (all probabilities are chosen to be equal)
+   - n possible events , probability of each event is 1/N
+   - p(E)= sum of probabilities of elements in E (in equally likely case)
+	- p(E) =mag(E)/mag(S)
+   	- P(E1∪E2)=P(E1)+P(E2)-P(E1∩E2)
+   
+3-conditional probability:
+	p(B|A)=p(B∩A)/p(A)
+	p(B∩A)=p(B|A)*p(A)
+
+4-total probability rule:
+	p(B)=P(B∩A)+P(B∩A')
+	p(B)=p(B|A)*P(A)+p(B|A')*P(A')
+5-independent events:
+	p(B∩A)=P(A)*P(B)
+6-Bayes theory:
+p(A|B)=[P(B|A)*P(A)]/P(B)
+
+

@@ -1,0 +1,6 @@
+1-project type (web-mobile)
+2-web (backend api 1.5 , angular ) , mobile(MAUI) with time estimated util requirment estimated 
+3- (3)hr a day because of training -> from 9:00 to 12:00 
+4-suggest shift or task. shift (3k to 4k) , task(beginning of month backlog tasks(5dollar)).
+5-
+note: archticutre of backend or frontend

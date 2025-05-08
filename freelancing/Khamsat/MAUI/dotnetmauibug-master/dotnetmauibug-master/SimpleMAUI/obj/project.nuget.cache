@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "816KVzM2YKs=",
+  "success": false,
+  "projectFilePath": "D:\\ITI\\ITI\\freelancing\\Khamsat\\MAUI\\dotnetmauibug-master\\dotnetmauibug-master\\SimpleMAUI\\SimpleMAUI.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1012",
+      "level": "Error",
+      "message": "Platform version is not present for one or more target frameworks, even though they have specified a platform: net8.0-ios"
+    }
+  ]
+}
