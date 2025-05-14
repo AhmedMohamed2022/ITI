@@ -1,0 +1,107 @@
+ETL vs ELT
+ELT
+staging area/server-> transform->datawarehouse
+
+
+warehourse -> denormalized(analysis only selecting) reduce joins and subquerys , historical,subject:measures oriended not
+ 
+data oriended :any little details reflect all databse
+integraed : many resours
+time-varying: historical (date dimension per it)
+non-volatile: doesn't re, dcesion making (insights to take descision) 
+
+
+package: 
+cubes: default sum, fact table,
+xml in PI all in background as understand all data sources 
+so can start with vendor and continue with other vendor
+
+ETL tools
+Teradata =>(ETL tool) Infromatica,
+Oracle=> DWH builder
+Power Query
+
+analysis:
+PowerPivot 
+IBM framework manager
+
+reporting:
+Microsoft:-
+Power View
+Excel
+PowerPI
+Crystal Report
+ProClarity
+SharePoint
+SSRS
+IBM:- Congons Reporting 
+Vodafone:- Sap Business Object
+open sours:- Tableau
+
+
+why OLAP
+
+fast execution
+no locking
+query builder is done by SSIS not me
+integration in one Datawarehouse (every one can see it in one place)
+
+Data Marts: part of Data warehouse specific for business or section
+
+dependent data mart: normal from existing Datawarehouse
+
+independent .. .. : from measure(total sales) and dimensions (sales) of small departments to generate small Datawarehouse  
+
+cubes: sub of datawarhouse or datamart has combination of calculation of aggregate Or (measure and dimensions)
+
+OLAP (vs OLTP)online analytical processing : How analysis service (SSAS) transform Datawarehouse and data mart to cubes
+
+
+level of gran
+level then members
+hierarchy year->quarter->month or any number of levels
+
+snowflake schema 
+one at least one normalized dimension
+x->y
+y->z
+x->z
+
+for can't denormalization situation
+
+like many to many (in datawarehouse coure)
+
+galaxy schema (realife example)
+shared dimesion linking 2 fact tables
+department ->measures ->fact table->dimensions= cubes(insights)
+
+pivot tables:
+row - columns-aggregate
+2-dimensional cube, 3-dimensional cube
+
+rollup-> less details , more aggregation
+drill-down-> more details, less aggregation
+
+
+db engine : dwh
+analysis service 
+
+OLAP
+HOLAP
+ROLAP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+Datawarehouse(denormalized,historical) 
+ETL Tools(extract transform load)=> packages
+Star schema
+fact table
+measure
+dimensions 
+cubes (
+insights
+data mining:
+-prediction
+-Hidde discor relationship
+-classifficatin
+
+integration(gathering ),analysis(cubes(compination aggregate , dimension) or dataming,reporting (and dashboard from cubes more performance)
+tools method help integ datasour store ware hou analy insights report da bus user right descion right time
+etl tools
+SSIS,integraion
+ssas cubes (datamining),
+ssrs,reports
+single point of trust
+online transaction OLAP , OLTP
+OLTP (processing)any data source transaciton 
+for analysis no update untile level of gran 
+level of granularity 
+integraed (more than one datasource)
+Dimentioanl modeling vs entity relationship diagram
+control flow, dataflow,connection manager,presedence constrains -> on sucess,failure,complete ,
+ variable , dataviewer
+

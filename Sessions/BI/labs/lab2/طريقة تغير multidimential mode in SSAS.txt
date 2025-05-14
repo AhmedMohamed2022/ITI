@@ -1,0 +1,14 @@
+1- stop analysis service 
+
+2-  C:\Program Files\Microsoft SQL Server\MSAS16.MSSQLSERVER\OLAP\Config
+
+ 3- filename : msmdsrv.ini
+
+4- change permission to admin to edit file   --->right click --> properties --> permissions --> advanced --->change
+
+ <DeploymentMode>0</DeploymentMode>
+
+2> Tabular
+0>Multidimensional
+
+السطر التاسع في ال notepad

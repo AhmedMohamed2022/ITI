@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<h4>SignalR Web Consumer Using HTML + JS</h4>
+<input type="text" placeholder="User Name" id="name" class="form form-control"/>
+<input type="text" placeholder="Rate" id="rate" class="form form-control"/>
+<textarea class="form form-control" id="text"></textarea>
+
+
+<input type="button" class="btn btn-success" onclick="SendMessage()" value="Send" />
+
+
+
+
+<ul id="msg">
+
+</ul>
+
+<!--Install PAckage SignalR Client-->
+<!--Jquery-->
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<!--SignR Client (js)-->
+<script src="~/lib/microsoft-signalr/signalr.min.js"></script>
+
+<script>
+    //1) declare hub
+    var hub = new signalR.HubConnectionBuilder().withUrl("/MyChat").build();
+    //2) Start Connection [connection Id]
+    hub.start().then(function(){
+        console.log("Connection Success");
+    });
+
+    //3) Server Call MEthod from Consumer (handel request)[ jsut event RPC]
+    // hub.on("NewUserConnectNotify", function () {
+    //     console.log("new user Connected");
+    // })
+    hub.on("NewMessageNotify", function (n,t) {
+        
+        $("#msg").append(`<li>${n}:${t}</li>`);
+    });
+    //4) send server text notidy anpther users 
+    function SendMessage(){
+        //send data to server (push)
+        var name = $("#name").val();
+        var text = $("#text").val();
+        var rate = parseInt($("#rate").val());
+        
+        //Rpc from client ==> server
+        hub.invoke("SendText", name, text,rate);//c# calling from client Js
+    }
+</script>
+
+

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "PowerBILab1", "PowerBILab1\PowerBILab1.dtproj", "{02521978-AB4D-A54F-9B1C-4A8852D69E9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02521978-AB4D-A54F-9B1C-4A8852D69E9D}.Development|Default.ActiveCfg = Development
+		{02521978-AB4D-A54F-9B1C-4A8852D69E9D}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEBCC2DF-69A1-420E-BE9E-63B1982DD586}
+	EndGlobalSection
+EndGlobal

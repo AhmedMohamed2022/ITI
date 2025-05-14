@@ -1,0 +1,107 @@
+﻿@model Store.Models.Product
+
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/microsoft-signalr/signalr.js"></script>
+
+<div class="container mt-4">
+
+    <a asp-action="Index" class="btn btn-secondary mb-3">← Back to Products</a>
+
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <h3 class="card-title">@Model.Name</h3>
+            <p class="card-text"><strong>Price:</strong> @Model.Price.ToString("C")</p>
+            <p><strong>Available Quantity:</strong> <span id="qtyDisplay">@Model.Quantity</span></p>
+            <h5>Buy Product</h5>
+            <div class="input-group mb-3" style="max-width: 300px;">
+                <input type="number" id="buyQty" class="form-control" placeholder="Quantity" min="1" />
+                <button onclick="BuyNow()" class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <h4>Comments</h4>
+    <ul class="list-group mb-4" id="commentList">
+        @foreach (var c in Model.Comments)
+        {
+            <li class="list-group-item">
+                <p class="mb-1">@c.Text</p>
+                <small class="text-muted">— @c.Author</small>
+            </li>
+        }
+    </ul>
+
+    <div class="card p-3">
+        <h5>Add a Comment</h5>
+        <input type="text" id="author" class="form-control mb-2" placeholder="Your Name" />
+        <textarea id="text" class="form-control mb-2" placeholder="Your Comment"></textarea>
+        <button onclick="SendComment()" class="btn btn-success">Send</button>
+    </div>
+</div>
+
+<script>
+    const productId = @Model.Id;
+
+    const hub = new signalR.HubConnectionBuilder().withUrl("/commentsHub").build();
+
+    hub.start().then(() => {
+        console.log("Connected to SignalR");
+    });
+
+    hub.on("ReceiveComment", function (pid, author, text) {
+        if (pid !== productId) return;
+
+        const li = `<li class="list-group-item">
+                        <p class="mb-1">${text}</p>
+                        <small class="text-muted">— ${author}</small>
+                    </li>`;
+        $("#commentList").prepend(li);
+    });
+        const quantityHub = new signalR.HubConnectionBuilder().withUrl("/quantityHub").build();
+
+    quantityHub.start().then(() => {
+        console.log("Connected to QuantityHub");
+    });
+
+    quantityHub.on("UpdateProductQuantity", function (pid, newQty) {
+        if (pid === productId) {
+            document.getElementById("qtyDisplay").innerText = newQty;
+        }
+    });
+
+    function SendComment() {
+        const author = $("#author").val();
+        const text = $("#text").val();
+
+        if (!author || !text) {
+            alert("Please enter both name and comment.");
+            return;
+        }
+
+        hub.invoke("SendComment", author, text, productId);
+        $("#text").val(""); // clear after send
+    }
+        hub.on("UpdateProductQuantity", function (pid, newQty) {
+        if (pid === productId) {
+            document.getElementById("qtyDisplay").innerText = newQty;
+        }
+    });
+
+    function BuyNow() {
+        const qty = parseInt(document.getElementById("buyQty").value);
+        if (!qty || qty < 1) {
+            alert("Enter a valid quantity");
+            return;
+        }
+
+        quantityHub.invoke("BuyProduct", productId, qty)
+            .catch(err => console.error("Error buying product:", err.toString()));
+
+        document.getElementById("buyQty").value = "";
+    }
+
+</script>
