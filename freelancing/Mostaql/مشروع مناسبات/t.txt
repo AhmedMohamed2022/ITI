@@ -1,0 +1,23 @@
+1-dashboard providers
+2-register otp whats app
+3-no sign in requied at first
+4- search (place , appointment,type of celebration,date,number of people not exact 50 100 , 150 200,300) popup filer result(),  with place date , second filteration , photo,dg,chairs,tables , flowers,funerial with its specific , 
+take with relation,
+chair cheap ,
+
+prices related
+name,phone, otp
+confirm: 10% ,
+rest for supplier
+20 , 16 , 
+history,
+report, 
+salon,farm, book appointment 
+50 free
+ appoint,
+contact us
+services
+
+chat bot static
+
+  
