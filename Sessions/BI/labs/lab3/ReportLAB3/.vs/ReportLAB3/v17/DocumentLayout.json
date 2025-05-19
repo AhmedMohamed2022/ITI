@@ -1,0 +1,164 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5E7AD7-4202-2AA0-826F-3B28922B0F44}|ReportLAB3.rptproj|D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\studentReport.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{1F5E7AD7-4202-2AA0-826F-3B28922B0F44}|ReportLAB3.rptproj|solutionrelative:studentReport.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5E7AD7-4202-2AA0-826F-3B28922B0F44}|ReportLAB3.rptproj|D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\Cube.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{1F5E7AD7-4202-2AA0-826F-3B28922B0F44}|ReportLAB3.rptproj|solutionrelative:Cube.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5E7AD7-4202-2AA0-826F-3B28922B0F44}|ReportLAB3.rptproj|D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\StudentByDept.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{1F5E7AD7-4202-2AA0-826F-3B28922B0F44}|ReportLAB3.rptproj|solutionrelative:StudentByDept.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5E7AD7-4202-2AA0-826F-3B28922B0F44}|ReportLAB3.rptproj|D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\StudentByAgeRange.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{1F5E7AD7-4202-2AA0-826F-3B28922B0F44}|ReportLAB3.rptproj|solutionrelative:StudentByAgeRange.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5E7AD7-4202-2AA0-826F-3B28922B0F44}|ReportLAB3.rptproj|D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\CoursesAsSP.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{1F5E7AD7-4202-2AA0-826F-3B28922B0F44}|ReportLAB3.rptproj|solutionrelative:CoursesAsSP.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5E7AD7-4202-2AA0-826F-3B28922B0F44}|ReportLAB3.rptproj|D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\StudentsGradeIndicator.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{1F5E7AD7-4202-2AA0-826F-3B28922B0F44}|ReportLAB3.rptproj|solutionrelative:StudentsGradeIndicator.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5E7AD7-4202-2AA0-826F-3B28922B0F44}|ReportLAB3.rptproj|D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\Report2.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{1F5E7AD7-4202-2AA0-826F-3B28922B0F44}|ReportLAB3.rptproj|solutionrelative:Report2.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5E7AD7-4202-2AA0-826F-3B28922B0F44}|ReportLAB3.rptproj|D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\Report1.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{1F5E7AD7-4202-2AA0-826F-3B28922B0F44}|ReportLAB3.rptproj|solutionrelative:Report1.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F5E7AD7-4202-2AA0-826F-3B28922B0F44}|ReportLAB3.rptproj|D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\Question1.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{1F5E7AD7-4202-2AA0-826F-3B28922B0F44}|ReportLAB3.rptproj|solutionrelative:Question1.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentByAgeRange.rdl [Design]",
+              "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\StudentByAgeRange.rdl",
+              "RelativeDocumentMoniker": "StudentByAgeRange.rdl",
+              "ToolTip": "D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\StudentByAgeRange.rdl [Design]",
+              "RelativeToolTip": "StudentByAgeRange.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-14T16:13:51.129Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentByDept.rdl [Design]",
+              "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\StudentByDept.rdl",
+              "RelativeDocumentMoniker": "StudentByDept.rdl",
+              "ToolTip": "D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\StudentByDept.rdl [Design]",
+              "RelativeToolTip": "StudentByDept.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-14T16:29:03.567Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cube.rdl [Design]",
+              "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\Cube.rdl",
+              "RelativeDocumentMoniker": "Cube.rdl",
+              "ToolTip": "D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\Cube.rdl [Design]",
+              "RelativeToolTip": "Cube.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-14T17:06:30.92Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "studentReport.rdl [Design]",
+              "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\studentReport.rdl",
+              "RelativeDocumentMoniker": "studentReport.rdl",
+              "ToolTip": "D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\studentReport.rdl [Design]",
+              "RelativeToolTip": "studentReport.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-14T17:24:31.557Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CoursesAsSP.rdl [Design]",
+              "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\CoursesAsSP.rdl",
+              "RelativeDocumentMoniker": "CoursesAsSP.rdl",
+              "ToolTip": "D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\CoursesAsSP.rdl [Design]",
+              "RelativeToolTip": "CoursesAsSP.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-14T16:07:35.926Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StudentsGradeIndicator.rdl [Design]",
+              "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\StudentsGradeIndicator.rdl",
+              "RelativeDocumentMoniker": "StudentsGradeIndicator.rdl",
+              "ToolTip": "D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\StudentsGradeIndicator.rdl [Design]",
+              "RelativeToolTip": "StudentsGradeIndicator.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-14T15:56:23.132Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Report2.rdl [Design]",
+              "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\Report2.rdl",
+              "RelativeDocumentMoniker": "Report2.rdl",
+              "ToolTip": "D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\Report2.rdl [Design]",
+              "RelativeToolTip": "Report2.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-14T15:46:36.431Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Report1.rdl [Design]",
+              "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\Report1.rdl",
+              "RelativeDocumentMoniker": "Report1.rdl",
+              "ToolTip": "D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\Report1.rdl [Design]",
+              "RelativeToolTip": "Report1.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-14T15:34:03.065Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Question1.rdl [Design]",
+              "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\Question1.rdl",
+              "RelativeDocumentMoniker": "Question1.rdl",
+              "ToolTip": "D:\\ITI\\ITI\\Sessions\\BI\\labs\\lab3\\ReportLAB3\\Question1.rdl [Design]",
+              "RelativeToolTip": "Question1.rdl [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-14T14:40:51.901Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

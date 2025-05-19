@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\Lab2\\WpfAppChatConsumer\\WpfAppChatConsumer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{88075EC6-B3AA-4696-97FB-67E0EAC8374F}|WpfAppChatConsumer\\WpfAppChatConsumer.csproj|d:\\iti\\iti\\sessions\\signalr\\labs\\lab2\\wpfappchatconsumer\\wpfappchatconsumer\\wpfappchatconsumer\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{88075EC6-B3AA-4696-97FB-67E0EAC8374F}|WpfAppChatConsumer\\WpfAppChatConsumer.csproj|solutionrelative:wpfappchatconsumer\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88075EC6-B3AA-4696-97FB-67E0EAC8374F}|WpfAppChatConsumer\\WpfAppChatConsumer.csproj|d:\\iti\\iti\\sessions\\signalr\\labs\\lab2\\wpfappchatconsumer\\wpfappchatconsumer\\wpfappchatconsumer\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{88075EC6-B3AA-4696-97FB-67E0EAC8374F}|WpfAppChatConsumer\\WpfAppChatConsumer.csproj|solutionrelative:wpfappchatconsumer\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\Lab2\\WpfAppChatConsumer\\WpfAppChatConsumer\\WpfAppChatConsumer\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfAppChatConsumer\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\Lab2\\WpfAppChatConsumer\\WpfAppChatConsumer\\WpfAppChatConsumer\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WpfAppChatConsumer\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T14:12:08.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\Lab2\\WpfAppChatConsumer\\WpfAppChatConsumer\\WpfAppChatConsumer\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WpfAppChatConsumer\\MainWindow.xaml",
+              "ToolTip": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\Lab2\\WpfAppChatConsumer\\WpfAppChatConsumer\\WpfAppChatConsumer\\MainWindow.xaml",
+              "RelativeToolTip": "WpfAppChatConsumer\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-17T14:12:08.483Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

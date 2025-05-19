@@ -19,7 +19,7 @@
             <h5>Buy Product</h5>
             <div class="input-group mb-3" style="max-width: 300px;">
                 <input type="number" id="buyQty" class="form-control" placeholder="Quantity" min="1" />
-                <button onclick="BuyNow()" class="btn btn-primary">Buy Now</button>
+                <button asp-action="BuyNow" class="btn btn-primary">Buy Now</button>
             </div>
         </div>
     </div>
@@ -39,7 +39,7 @@
         <h5>Add a Comment</h5>
         <input type="text" id="author" class="form-control mb-2" placeholder="Your Name" />
         <textarea id="text" class="form-control mb-2" placeholder="Your Comment"></textarea>
-        <button onclick="SendComment()" class="btn btn-success">Send</button>
+        <button asp-action="SendComment" class="btn btn-success">Send</button>
     </div>
 </div>
 
@@ -53,14 +53,18 @@
     });
 
     hub.on("ReceiveComment", function (pid, author, text) {
-        if (pid !== productId) return;
+        // if (pid !== productId) return;
 
-        const li = `<li class="list-group-item">
-                        <p class="mb-1">${text}</p>
-                        <small class="text-muted">— ${author}</small>
-                    </li>`;
-        $("#commentList").prepend(li);
+        // const li = `<li class="list-group-item">
+        //                 <p class="mb-1">${text}</p>
+        //                 <small class="text-muted">— ${author}</small>
+        //             </li>`;
+        // $("#commentList").prepend(li);
+        console.log("Comment received:", pid, author, text);
     });
+
+    ////////////////////////////////////Product
+
         const quantityHub = new signalR.HubConnectionBuilder().withUrl("/quantityHub").build();
 
     quantityHub.start().then(() => {
@@ -73,35 +77,39 @@
         }
     });
 
-    function SendComment() {
-        const author = $("#author").val();
-        const text = $("#text").val();
+    // function SendComment() {
+    //     const author = $("#author").val();
+    //     const text = $("#text").val();
 
-        if (!author || !text) {
-            alert("Please enter both name and comment.");
-            return;
-        }
+    //     if (!author || !text) {
+    //         alert("Please enter both name and comment.");
+    //         return;
+    //     }
 
-        hub.invoke("SendComment", author, text, productId);
-        $("#text").val(""); // clear after send
-    }
+    //     hub.invoke("SendComment", author, text, productId);
+    //     $("#text").val(""); clear after send
+    // }
+
+
+
         hub.on("UpdateProductQuantity", function (pid, newQty) {
         if (pid === productId) {
             document.getElementById("qtyDisplay").innerText = newQty;
+
         }
     });
 
-    function BuyNow() {
-        const qty = parseInt(document.getElementById("buyQty").value);
-        if (!qty || qty < 1) {
-            alert("Enter a valid quantity");
-            return;
-        }
+    // function BuyNow() {
+    //     const qty = parseInt(document.getElementById("buyQty").value);
+    //     if (!qty || qty < 1) {
+    //         alert("Enter a valid quantity");
+    //         return;
+    //     }
 
-        quantityHub.invoke("BuyProduct", productId, qty)
-            .catch(err => console.error("Error buying product:", err.toString()));
+    //     quantityHub.invoke("BuyProduct", productId, qty)
+    //         .catch(err => console.error("Error buying product:", err.toString()));
 
-        document.getElementById("buyQty").value = "";
-    }
+    //     document.getElementById("buyQty").value = "";
+    // }
 
 </script>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="card p-3">
+            <h5>Add a Comment</h5>
+            <input type="text" id="productId" class="form-control mb-2" placeholder="Product ID" />
+            <input type="text" id="author" class="form-control mb-2" placeholder="Your Name" />
+            <textarea id="text" class="form-control mb-2" placeholder="Your Comment"></textarea>
+            <button onclick="SendComment()" class="btn btn-success">Send</button>
+        </div>
+        <ul class="list-group mb-4" id="commentList">
+
+        </ul>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.min.js"
+    integrity="sha512-7SRCYIJtR6F8ocwW7UxW6wGKqbSyqREDbfCORCbGLatU0iugBLwyOXpzhkPyHIFdBO0K2VCu57fvP2Twgx1o2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+    integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<script>
+
+    const hub = new signalR.HubConnectionBuilder().withUrl("http://localhost:5242/commentsHub").build();
+
+    hub.start().then(() => {
+        console.log("Connected to SignalR");
+    });
+    let productId = 2;
+    hub.on("ReceiveComment", function (resp) {
+        console.log("Received comment:", resp);
+
+        if (resp.productId !== productId) return;
+        console.log("Comment received:", resp);
+
+        const li = `<li class="list-group-item">
+    <p class="mb-1">${resp.text}</p>
+    <small class="text-muted">— ${resp.author}</small>
+</li>`;
+        $("#commentList").prepend(li);
+    });
+
+    function SendComment() {
+        const author = $("#author").val();
+        const text = $("#text").val();
+        const productId = $("#productId").val();
+        const comment = {
+            productId: productId,
+            text: text,
+            author: author
+        }
+        if (!author || !text) {
+            alert("Please enter both name and comment.");
+            return;
+        }
+
+        fetch("http://localhost:5242/SendComment", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(comment)
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return console.log("Comment sent successfully");
+
+            })
+            .catch(error => {
+                console.error("Error sending comment:", error);
+            });
+
+        $("#text").val("");
+        // clear after send
+    }
+</script>
+
+</html>

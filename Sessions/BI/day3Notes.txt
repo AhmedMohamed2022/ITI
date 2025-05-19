@@ -1,0 +1,73 @@
+dashboard(EXCEL) vs report (SSRS)
+many reports (all insight of enteprice |specific department (business)
+there are two types of reports ->
+1-adhoc reports(runtime) (OLTP) regural db (for just review)(80%)(TSQL)
+
+2-analytical reports (for making strategic decision)(cubes)(20%)(MDX)
+
+
+there are four 4 types of report outputs 
+(
+Tabular report(table form)
+,matrix report(pivot report) ->pivot table (x,y , aggregation)
+,chart rep ->(chart column,pie ..)
+,freeform rep -> (custom design report)
+)
+
+
+
+after that we 
+deployment:(when we configured ssrs built in website that we deploy in (http://localhost/reports)
+
+report consists of:
+datasoure (connection string of db or cube
+dataset (query to get the data)
+design (tabular,matrix,chart,freeform)
+
+
+save or export to get the report
+
+SSRS expression all SSRS is <-
+
+external -> img path in db
+embedded -> ..  in hard disk 
+db-> as binary
+
+expression
+colors properties
+
+
+blocked same line
+stepped one linebreak
+
+enable drill down (moredetails)
+encude subtotal (calculate sum)
+
+graphical query builder
+generic .. .. 
+
+sql has RowNumber property that index all rows in runtime
+Mod 
+
+kpi SSAS vs indicator SSRS
+
+
+
+
+text box properties->interactive sorting ->sort by
+
+
+SSRS can mimik dashboard by usig (linked report) 
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B6504315-FCD9-4D37-A88F-92BB0547E88A}|Store\\Store.csproj|d:\\iti\\iti\\sessions\\signalr\\labs\\lab1\\store\\store\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6504315-FCD9-4D37-A88F-92BB0547E88A}|Store\\Store.csproj|solutionrelative:store\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6504315-FCD9-4D37-A88F-92BB0547E88A}|Store\\Store.csproj|d:\\iti\\iti\\sessions\\signalr\\labs\\lab1\\store\\store\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6504315-FCD9-4D37-A88F-92BB0547E88A}|Store\\Store.csproj|solutionrelative:store\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6504315-FCD9-4D37-A88F-92BB0547E88A}|Store\\Store.csproj|d:\\iti\\iti\\sessions\\signalr\\labs\\lab1\\store\\store\\hubs\\commentshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6504315-FCD9-4D37-A88F-92BB0547E88A}|Store\\Store.csproj|solutionrelative:store\\hubs\\commentshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B6504315-FCD9-4D37-A88F-92BB0547E88A}|Store\\Store.csproj|d:\\iti\\iti\\sessions\\signalr\\labs\\lab1\\store\\store\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B6504315-FCD9-4D37-A88F-92BB0547E88A}|Store\\Store.csproj|solutionrelative:store\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -11,24 +23,12 @@
       "RelativeMoniker": "D:0:0:{B6504315-FCD9-4D37-A88F-92BB0547E88A}|Store\\Store.csproj|solutionrelative:store\\hubs\\quantityhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B6504315-FCD9-4D37-A88F-92BB0547E88A}|Store\\Store.csproj|d:\\iti\\iti\\sessions\\signalr\\labs\\lab1\\store\\store\\models\\messegecontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6504315-FCD9-4D37-A88F-92BB0547E88A}|Store\\Store.csproj|solutionrelative:store\\models\\messegecontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B6504315-FCD9-4D37-A88F-92BB0547E88A}|Store\\Store.csproj|d:\\iti\\iti\\sessions\\signalr\\labs\\lab1\\store\\store\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B6504315-FCD9-4D37-A88F-92BB0547E88A}|Store\\Store.csproj|solutionrelative:store\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6504315-FCD9-4D37-A88F-92BB0547E88A}|Store\\Store.csproj|d:\\iti\\iti\\sessions\\signalr\\labs\\lab1\\store\\store\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6504315-FCD9-4D37-A88F-92BB0547E88A}|Store\\Store.csproj|solutionrelative:store\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6504315-FCD9-4D37-A88F-92BB0547E88A}|Store\\Store.csproj|d:\\iti\\iti\\sessions\\signalr\\labs\\lab1\\store\\store\\hubs\\commentshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6504315-FCD9-4D37-A88F-92BB0547E88A}|Store\\Store.csproj|solutionrelative:store\\hubs\\commentshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6504315-FCD9-4D37-A88F-92BB0547E88A}|Store\\Store.csproj|d:\\iti\\iti\\sessions\\signalr\\labs\\lab1\\store\\store\\store.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B6504315-FCD9-4D37-A88F-92BB0547E88A}|Store\\Store.csproj|solutionrelative:store\\store.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6504315-FCD9-4D37-A88F-92BB0547E88A}|Store\\Store.csproj|d:\\iti\\iti\\sessions\\signalr\\labs\\lab1\\store\\store\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6504315-FCD9-4D37-A88F-92BB0547E88A}|Store\\Store.csproj|solutionrelative:store\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,17 +38,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Views\\Product\\Details.cshtml",
               "RelativeDocumentMoniker": "Store\\Views\\Product\\Details.cshtml",
               "ToolTip": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Views\\Product\\Details.cshtml",
               "RelativeToolTip": "Store\\Views\\Product\\Details.cshtml",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAIwBoAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-11T11:31:57.681Z",
               "IsPinned": true,
@@ -56,75 +56,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "QuantityHub.cs",
-              "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Hubs\\QuantityHub.cs",
-              "RelativeDocumentMoniker": "Store\\Hubs\\QuantityHub.cs",
-              "ToolTip": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Hubs\\QuantityHub.cs",
-              "RelativeToolTip": "Store\\Hubs\\QuantityHub.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T07:33:26.954Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CommentsHub.cs",
-              "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Hubs\\CommentsHub.cs",
-              "RelativeDocumentMoniker": "Store\\Hubs\\CommentsHub.cs",
-              "ToolTip": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Hubs\\CommentsHub.cs",
-              "RelativeToolTip": "Store\\Hubs\\CommentsHub.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCAAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T12:00:29.809Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Store.csproj",
-              "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Store.csproj",
-              "RelativeDocumentMoniker": "Store\\Store.csproj",
-              "ToolTip": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Store.csproj",
-              "RelativeToolTip": "Store\\Store.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-11T11:59:02.01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Program.cs",
-              "RelativeDocumentMoniker": "Store\\Program.cs",
-              "ToolTip": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Program.cs",
-              "RelativeToolTip": "Store\\Program.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwCAAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T11:24:54.095Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Views\\Product\\Index.cshtml",
               "RelativeDocumentMoniker": "Store\\Views\\Product\\Index.cshtml",
               "ToolTip": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Views\\Product\\Index.cshtml",
               "RelativeToolTip": "Store\\Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAABlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-11T11:21:22.775Z"
+              "WhenOpened": "2025-05-17T16:49:23.645Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
+              "Title": "MessegeContent.cs",
+              "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Models\\MessegeContent.cs",
+              "RelativeDocumentMoniker": "Store\\Models\\MessegeContent.cs",
+              "ToolTip": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Models\\MessegeContent.cs",
+              "RelativeToolTip": "Store\\Models\\MessegeContent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T16:28:26.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "QuantityHub.cs",
+              "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Hubs\\QuantityHub.cs",
+              "RelativeDocumentMoniker": "Store\\Hubs\\QuantityHub.cs",
+              "ToolTip": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Hubs\\QuantityHub.cs",
+              "RelativeToolTip": "Store\\Hubs\\QuantityHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T16:07:40.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CommentsHub.cs",
+              "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Hubs\\CommentsHub.cs",
+              "RelativeDocumentMoniker": "Store\\Hubs\\CommentsHub.cs",
+              "ToolTip": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Hubs\\CommentsHub.cs",
+              "RelativeToolTip": "Store\\Hubs\\CommentsHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T16:06:21.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Program.cs",
+              "RelativeDocumentMoniker": "Store\\Program.cs",
+              "ToolTip": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Program.cs",
+              "RelativeToolTip": "Store\\Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T15:38:56.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Store\\Controllers\\ProductController.cs",
               "ToolTip": "D:\\ITI\\ITI\\Sessions\\SignalR\\Labs\\lab1\\Store\\Store\\Controllers\\ProductController.cs",
               "RelativeToolTip": "Store\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAwBgAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowDUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T11:21:03.15Z"
+              "WhenOpened": "2025-05-11T11:21:03.15Z",
+              "EditorCaption": ""
             }
           ]
         }

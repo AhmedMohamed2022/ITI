@@ -15,6 +15,23 @@ namespace Store
             builder.Services.AddSignalR();
             builder.Services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+            //builder.Services.AddCors(options =>
+            //{
+            //    options.AddDefaultPolicy(policy =>
+            //    {
+            //        policy.AllowAnyMethod() // Replace with your React app URL
+            //              .AllowAnyHeader()
+            //              .SetIsOriginAllowed(url =>
+            //              {
+            //                  if (url == "")
+            //                  {
+            //                      return true;
+            //                  }
+            //                  return false;
+            //              }).AllowCredentials();
+            //    });
+             
+            //});
 
             var app = builder.Build();
 
@@ -28,7 +45,11 @@ namespace Store
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseCors(policy => policy
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .SetIsOriginAllowed(_ => true)
+                .AllowCredentials());
             app.MapHub<CommentsHub>("/commentsHub");
             app.MapHub<QuantityHub>("/quantityHub"); 
 

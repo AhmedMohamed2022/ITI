@@ -1,0 +1,92 @@
+Import mode 
+
+Data sources --> Databases, CRM, sap, web, api, excel, text files, csv, parquet, avro, json, pdf, SSAS
+
+Database sql server / local host 
+ 
+Table students
+
+ID     Name     Age
+1	ahmed    20
+2       Mariem   22
+3       Hossam   24
+4       Heba     21
+
+
+Refresh required ---> pro = 8 per day / premium = 48 day
+
+PBIX ---> (Semantic model + Report ) Power bi service / Cloud
+
+PBIX ---> (Data + Model + Report)
+
+Good performance / Poor memory
+----------------------------------------------------------
+
+Direct Query ----> Databases sql server + SSAS
+
+ID     Name     Age
+1	ahmed    20
+2       Mariem   22
+3       Hossam   24
+4       Heba     21
+
+
+Refresh not required - Data gateway
+
+likely poor Performance / no need for memory usage
+
+PBIX ---> (Semantic model + Report ) Power bi service / Cloud
+
+PBIX ---> (Model + Report)
+
+------------------------------------------------------------------
+
+Composite mode / Mixed 
+
+Transactions ----> Direct query 
+
+Vendors ----> Import mode 
+
+Customers ----> Import mode 
+
+Shipping ---- > Direct query
+
+PBIX ---> (Semantic model + Report ) Power bi service / Cloud
+
+PBIX ---> (Data + Model + Report)
+
+-------------------------------------------------------------------------------
+
+Live connection 
+
+Data Sources ---> Powerbi semantic models/ data sets + SSAS + ASSAS
+
+Refresh not required 
+
+PBIX-----> (Report)
+
+PBIX-----> (Model + Report)
+
+
+------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

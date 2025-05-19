@@ -87,8 +87,16 @@ db engine : dwh
 analysis service 
 
 OLAP
+normal cube has :{dimension data + aggregation}
+
 HOLAP
+hyprid cube has :{aggregation}
+
 ROLAP
+structure cube has :{sturcture(only know what to gather and calculate)}
+
+mdx language of cubes or datawarehourse vs TSQL
+.xmla
 
 
 
